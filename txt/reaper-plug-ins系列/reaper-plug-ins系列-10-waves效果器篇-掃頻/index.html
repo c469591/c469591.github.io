@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>Reaper Plug Ins系列 10 Waves效果器篇 掃頻 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper plug-ins系列-10-waves效果器篇 如何掃頻，以及我們能在頻率上做些什麼……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-10-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E6%8E%83%E9%A0%BB/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2022-02-25T16:06:10+08:00",
+        "dateModified": "2022-04-29T11:38:09+08:00",
+        "url": "http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-10-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E6%8E%83%E9%A0%BB/",
+        "headline": "Reaper Plug Ins系列 10 Waves效果器篇 掃頻",
+        "description": "reaper plug-ins系列-10-waves效果器篇 如何掃頻，以及我們能在頻率上做些什麼……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3708 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="Reaper Plug Ins系列 10 Waves效果器篇 掃頻" />
+<meta property="og:description" content="reaper plug-ins系列-10-waves效果器篇 如何掃頻，以及我們能在頻率上做些什麼……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-10-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E6%8E%83%E9%A0%BB/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2022-02-25T16:06:10&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:38:09&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">Reaper Plug Ins系列 10 Waves效果器篇 掃頻</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:38:09&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;8&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper-plug-ins系列-10-waves效果器篇-如何掃頻以及我們能在頻率上做些什麼事">reaper plug-ins系列-10-waves效果器篇 如何掃頻，以及我們能在頻率上做些什麼事</h2>
+<p>這篇要介紹的是掃頻的方法，這就像看書的人為了看得更清楚，拿放大鏡將畫面放大一樣，<br>
+掃頻則是將某個頻段的音量增大，以此讓耳朵能更清楚的辨識，<br>
+這個技巧其實很簡單，難的是自己要有一個可以正確的發出無音染聲音的設備，避免因為聲音不夠準確而影響了耳朵的判斷。</p>
+<h3 id="掃頻詳解">掃頻詳解</h3>
+<p>掃頻這個技巧其實非常好理解，只要記住幾個要點，你也能學會掃頻:</p>
+<ol>
+<li>針對低頻不是主要能量的聲音:<br>
+q值設定在6到15左右</li>
+<li>針對高頻:<br>
+q值設定在15到50左右</li>
+<li>將這個頻段的gain(音量)增大12DB以上</li>
+<li>移動頻點，也就是在播放的情況下移動頻點，找出有問題的頻段</li>
+</ol>
+<p>p.s 由於人耳對低頻的敏感度沒有高頻敏感度高，因此在低頻時會用較寬的q值6到15之間，<br>
+而高頻時我們就會採用更窄的q值，也就是15到50的q值。</p>
+<h4 id="什麼是好聲音什麼樣的聲音是有問題的">什麼是好聲音？什麼樣的聲音是有問題的？</h4>
+<p>或許你會問，什麼樣的聲音才是好聲音？<br>
+書中的答案是[直到你能夠證明這個聲音確實有問題之前，它就是沒問題的，就是好聲音。<br>
+那麼如何來證明這個聲音從頻率上來說到底有沒有問題呢？這就是EQ 的作用了。]。<br>
+或許你看完上面的文字，還是一頭霧水，接下來讓我為各位說明:<br>
+現在在腦海中想像出一個有50人的合唱團，其中有一個叫小羔羊的帥哥嗓門特別大、聲音又特別粗，這樣聽起來的效果會如何？<br>
+在這個狀況下，小羔羊就成了合唱團裡導致整體聲音最不合諧的那個人，<br>
+合唱團是需要每個人的聲音能相互融合，成為整體，讓觀眾能平均的聽到每位成員的聲音，<br>
+無奈小羔羊的嗓門太大，讓觀眾都聽不見其他人的聲音，如此就無法讓聲音成為一個整體、平均的聲音。<br>
+同理，我們每處理的一個聲音素材就像由很多頻率組成的合唱團，我們希望聽眾聽到的是整體的聲音，而不是某幾個頻段的聲音，<br>
+此時，就要用掃頻的技巧來解決這些問題，<br>
+在掃頻的過成中，不但會聽到頻率的變化，同時也會聽到響度大小的變化。<br>
+而我們要尋找的，就是響度變大的某個或某幾個點。這樣的頻點，我們稱之為[共振點]<br>
+響度在這裡可以先理解成音量，在掃頻的過成中，需要找到聲音的共振點，並將其衰減，讓整個聲音的美個頻段盡量平均，<br>
+但很多時候，共振點或許就是這個聲音的特色所在，很多時候我們必須做取捨，<br>
+只要保持一個觀念，所有的調整，目的就是讓聲音、音樂變得更好聽，<br>
+只要能更好的為耳朵服務，那就達到目的了。</p>
+<h4 id="第一重點如何掃頻">第一重點，如何掃頻</h4>
+<ol>
+<li>打開reaper，新增一條軌道，並將聲音素材插入到軌道上</li>
+<li>將之前文章介紹的q10加載到軌道上，或新增另一條軌道並將有聲音素材的軌道發送到q10的軌道，<br>
+記得取消聲音素材軌的主控發送</li>
+<li>在q10的軌道上按p，在參數列表中找到這個參數<br>
+Band 1 On/Off (3)<br>
+tab到值，將其改為in，也就是讓q10對這個頻段做處理</li>
+<li>回到參數列表，找<br>
+Band 1 Gain (5)<br>
+tab到值，將其改為12DB，你也可以自己改到能清楚辨認的音量增益，<br>
+也就是加大這個頻段，讓我們可以聽出來作用的是哪個頻段的聲音</li>
+<li>回到參數列表，找<br>
+Band 1 Q (7)<br>
+tab到值，將其改為6到15之間，或15到50之間，看要處理的是低頻還是高頻的聲音</li>
+<li>回到參數列表，找<br>
+Band 1 Frq (6)<br>
+tab到值，這裡預設為31hz，<br>
+按ctrl+空格開始播放素材，接著按上或下翻頁慢慢往20000hz靠近，<br>
+移動的跨度要小，速度不要太快，慢慢移動頻點來尋找共振點</li>
+<li>如果找到了共振點，就回到參數列表，找<br>
+Band 1 Gain (5)<br>
+來調整音量到0以下做衰減的動作，在儘量不影響其他頻率的情況下衰減共振點<br>
+衰減的大小沒有固定值，而是讓這個頻段的聲音跟其他頻段的音量相近即可，<br>
+若是會讓聲音變得難聽的頻段，可以考慮做更大的衰減</li>
+<li>調整好後，就完成了對這個頻段的處理，就要繼續找下一個共振點，<br>
+band1保持剛剛調整完的參數，從參數列表找到<br>
+band2<br>
+接著重複第三步的步驟，打開這個頻段、調整q值、把gain設為12DB以上，然後移動頻點，<br>
+找到共振點一樣進行衰減，再來繼續用band3來重複一樣的動作以此類推，<br>
+直到沒有哪個頻段的音量是明顯突出的，如此就完成掃頻修復聲音的操作了。</li>
+</ol>
+<p>p.s 在使用eq時，可以先在reaper內，用[跟]選定一段區域，按ctrl+r重複播放，來反覆比對，<br>
+掃頻的操作非常不推薦使用頻段solo的功能來搜尋共振點，原因在於某些EQ的solo的工作模式可能會影響聲音，讓耳朵誤判。</p>
+<h4 id="第二個重點調整聲音的遠近層次">第二個重點，調整聲音的遠近層次</h4>
+<p>一說到聲音的遠近，就會有很多人想到混響、Delay（延時）。但是混響和Delay真的能決定聲音的遠近嗎？<br>
+我們先不去聽什麼對比，只要想像兩個場景，就能夠解答這個問題。<br>
+請在頭腦中想像一個畫面，你和另一個人從屋子裡往外走，一邊走一邊聊天，從屋子裡走到了樓梯間裡，我們都知道，一般樓梯間裡混響時間都會比較長。<br>
+那麼，這個時候，你會不會突然覺得你們倆之間的距離變遠了？應該不會吧？<br>
+接下來，我們再想像另一個場景，在一個開闊地——比如草原上，正在舉行露天演出，<br>
+在這種場景下，你能聽到的混響很少很少，但是當你遠離舞臺時，你依然能夠清晰地判斷出來，演出的聲音離你更遠了。</p>
+<hr>
+<p>通過這兩個畫面的想像，我們就可以清楚地知道，其實混響對於聲音的遠近影響並不大，注意，並不大，不是完全沒有。<br>
+那麼，混響到底是用來幹什麼的呢？混響的具體作用有很多，但是在上面的兩個場景當中，混響只有一個作用，那就是空間描述，我們對於混響的聽覺經驗，會讓你判斷出你身處空間的大概的大小。<br>
+Delay也是一樣，它是對於空間的一種另類描述和補充。<br>
+那麼，既然混響和Delay都不能決定聲音的遠近，那麼是什麼在起著決定性的作用呢？答案是：頻率。</p>
+<hr>
+<p>我們依然想像上面的那個例子，在一個開闊地，正在舉行露天演出。當你距離它很遠的時候，你聽到的聲音中哪個頻段最多？<br>
+很顯然，是中低頻，如果這個時候，你逐步靠近演出的舞臺，你會發現，”上面的&quot;頻率越來越多，越來越清晰。這也就是為什麼調整聲音的遠近層次，是EQ的事情，而非混響和Delay。</p>
+<hr>
+<p>在聲音的處理上，我們可以使用eq來模擬聲音的距離感，根據書中的資料，以及上篇的介紹，<br>
+可以嘗試在<br>
+中頻:800到2500hz<br>
+做處理，以此控制聲音的遠近層次，<br>
+當然，或許對其他的頻率做處理，也能達到處於不同空間的聽感，這就需要各位自己嘗試了。</p>
+<h4 id="用低切和高切讓聲音更清晰">用低切和高切讓聲音更清晰</h4>
+<p>除了通常的掃頻之後的EQ衰減，我們還需要給音色做高切和低切。<br>
+之前的文章有提到過，適當的高低切能夠讓音樂保持足夠的清晰度。那麼，具體應該怎麼做高低切呢？<br>
+首先，打開低切，選擇低切的斜率。通常，EQ的高低切斜率會有6dB，12dB，18dB，24dB以及36dB幾種數值。<br>
+不同的EQ會有不同的斜率選擇。我最常用的斜率是12dB和24dB。斜率的數字代表著高低切在每倍頻成降低的電平。也就是說，12dB斜率代表著每倍頻成降低12dB，<br>
+根據我自己的經驗，有些EQ的高低切並不能選擇斜率，目前還沒深度探索其原因。</p>
+<hr>
+<p>在選擇了斜率之後，需要移動當前要切的頻點，以找到最合適的切點。<br>
+在高低切方面，通常有兩種做法，一種是單聲部做法，在這種情況下，高低切只是為了讓聲音變得更乾淨。<br>
+在尋找低切點的時候，我們需要找到一個能夠讓低頻更加緊實有力的頻點，但卻不能讓低頻變得發虛或者聽起來很薄。<br>
+在尋找高切點的時候，我們需要找到一個能夠讓高頻聽起來乾淨而不那麼鬆散的頻率，但是卻不能讓聲音失去活性。<br>
+這段文字或許無法更具體的體現出高低切的效果，那麼你可以到這裡下載高低切前後的聲音，比對高低切前後的差異:<br>
+<a href="https://drive.google.com/open?id=1RGYDUJHOKRtzyOJYwlqC4kxf5PCd2ivz&amp;authuser=c469591%40mail.batol.net&amp;usp=drive_fs" target="_blank" rel="noopener">點我下載eq高低切處理demo</a><br>
+第二種作法則是為了多聲部的避讓，不過我還沒有很好的掌握，因此未來有經驗了再跟各位分享。</p>
+<p>p.s 要注意的是，人聲的處理並不會用高切，只會適當的用低切，使聲音顯得更清晰，<br>
+而每個人錄音進去的聲音，高低切的頻點也不太一樣，粗略來講，女性200hz，男性100hz，切的位置還是要參考上面提到的要點。</p>
+<h4 id="第三重點美化聲音">第三重點，美化聲音</h4>
+<p>這種方式很多人應該都聽說過，通過對某些頻段的提升，達到讓聲音更好聽的目的。<br>
+但是，提升也不是那麼簡單的。既需要所調整的聲音變得好聽，又不能因此而使別的聲音變得難聽。<br>
+這需要我們在調整的時候格外小心。</p>
+<hr>
+<p>說到EQ的提升，對於大部分的樂器來說，我是不會使用的，只會在底鼓、Bass、人聲以及少量情況下的小鼓上使用。<br>
+對於EQ提升來說，多麼小心都是不過分的！</p>
+<h3 id="什麼樣的聲音是自然的聲音">什麼樣的聲音是自然的聲音？</h3>
+<p>以下是書中摘錄李金城的經驗分享:<br>
+幾年前，有一次在與網友討論高低切的問題時，有一個網友說他不想用高低切，因為即使切得再少，他都能聽到聲音上的變化，這讓他覺得聲音的原始性、自然性被破壞了。<br>
+其實在這裡我要多說一句，前文我們曾經討論過一個話題——到底什麼樣的聲音是好聲音。答案是沒問題的聲音就是好聲音。<br>
+那麼，沒問題和自然有區別嗎？有！首先，我們所聽到的聲音都是從音箱當中播放出來的，已經經過了最少兩次電聲轉換，甚至還有最少兩次的模數轉換的聲音，哪來的什麼自然？<br>
+因此，所謂的自然，只是聽覺的自然，而不是真正的原生態。<br>
+聽覺的自然，毫無疑問是假的，是做出來的。就好像你在屋子裡安裝一台負離子發生器，屋子裡的空氣會讓人感覺清新一些，但這不是真正的清新，一樣的道理，聲音也如此。<br>
+因此，我們沒必要去追求完全原生態的自然，而是要最大限度地追求聽覺的美感。</p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-11-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E7%94%A8%E8%81%BD%E8%A6%BA%E4%BA%86%E8%A7%A3%E9%A0%BB%E8%AD%9C%E7%9A%84vst%E4%BB%A5%E5%8F%8A%E5%9D%87%E8%A1%A1%E5%99%A8%E7%9A%84%E9%AB%98%E4%BD%8E%E5%88%87%E5%92%8C%E6%8E%A7%E5%88%B6%E8%81%B2%E9%9F%B3%E9%81%A0%E8%BF%91%E7%9A%84%E6%96%B9%E6%B3%95/" rel="prev">&lt; Reaper Plug Ins系列 11 Waves效果器篇 用聽覺了解頻譜的vst以及均衡器的高低切和控制聲音遠近的方法</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-9-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E5%A4%A7%E8%85%A6%E5%88%86%E9%A0%BB%E6%B3%95%E4%BB%A5%E5%8F%8A%E7%94%A8%E5%AF%A6%E6%88%B0%E4%BE%86%E4%BA%86%E8%A7%A3%E4%B8%8D%E5%90%8C%E9%A0%BB%E6%AE%B5%E7%9A%84%E8%81%B2%E9%9F%B3%E7%89%B9%E6%80%A7/" rel="next">Reaper Plug Ins系列 9 Waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

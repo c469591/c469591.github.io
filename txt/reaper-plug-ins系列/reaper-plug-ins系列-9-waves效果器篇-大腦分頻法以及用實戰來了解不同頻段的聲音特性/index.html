@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>Reaper Plug Ins系列 9 Waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper plug-ins系列-9-waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-9-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E5%A4%A7%E8%85%A6%E5%88%86%E9%A0%BB%E6%B3%95%E4%BB%A5%E5%8F%8A%E7%94%A8%E5%AF%A6%E6%88%B0%E4%BE%86%E4%BA%86%E8%A7%A3%E4%B8%8D%E5%90%8C%E9%A0%BB%E6%AE%B5%E7%9A%84%E8%81%B2%E9%9F%B3%E7%89%B9%E6%80%A7/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2022-02-25T16:05:54+08:00",
+        "dateModified": "2022-04-29T11:38:03+08:00",
+        "url": "http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-9-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E5%A4%A7%E8%85%A6%E5%88%86%E9%A0%BB%E6%B3%95%E4%BB%A5%E5%8F%8A%E7%94%A8%E5%AF%A6%E6%88%B0%E4%BE%86%E4%BA%86%E8%A7%A3%E4%B8%8D%E5%90%8C%E9%A0%BB%E6%AE%B5%E7%9A%84%E8%81%B2%E9%9F%B3%E7%89%B9%E6%80%A7/",
+        "headline": "Reaper Plug Ins系列 9 Waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性",
+        "description": "reaper plug-ins系列-9-waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3379 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="Reaper Plug Ins系列 9 Waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性" />
+<meta property="og:description" content="reaper plug-ins系列-9-waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-9-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E5%A4%A7%E8%85%A6%E5%88%86%E9%A0%BB%E6%B3%95%E4%BB%A5%E5%8F%8A%E7%94%A8%E5%AF%A6%E6%88%B0%E4%BE%86%E4%BA%86%E8%A7%A3%E4%B8%8D%E5%90%8C%E9%A0%BB%E6%AE%B5%E7%9A%84%E8%81%B2%E9%9F%B3%E7%89%B9%E6%80%A7/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2022-02-25T16:05:54&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:38:03&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">Reaper Plug Ins系列 9 Waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:38:03&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper-plug-ins系列-9-waves效果器篇-大腦分頻法以及用實戰來了解不同頻段的聲音特性">reaper plug-ins系列-9-waves效果器篇 大腦分頻法，以及用實戰來了解不同頻段的聲音特性</h2>
+<p>在人的世界裡，每個人都有自己的喜好，同樣的一根雞腿，有的人可能覺得太鹹、有的人可能覺得食之無味，<br>
+但在聲音的世界裡，不同的頻段或許從不同人口中會有不同的描述方式，但在聲學卻有其客觀的特性，<br>
+掌握了每個頻段的特性之後，加上不斷練習大腦分頻法，我們就能更事半功倍的用eq將聲音調整成理想中的聲音，而不會毫無頭緒的在頻率中迷失方向。</p>
+<h3 id="大腦分頻法">大腦分頻法</h3>
+<p>首先，我們需要把注意力集中在頻率上，但是頻率有那麼多，怎麼可能一下子都聽明白？<br>
+因此，我們要學會訓練自己的耳朵去”分頻&quot;，可以按照之前講過的聲音頻率分佈來做這個分頻。<br>
+這種方法，有利於你分辨兩個相似聲音中的不同點。<br>
+我們在腦子裡按照頻率的特性把聲音分成若干個”段落&quot;，然後一個個地逐一比較。<br>
+這樣，便會在頭腦中形成一個暫時的記憶。比如某一段音樂，我們會聽到它的中頻比較豐富，中高頻略少等，那麼在播放同樣音樂的下一個版本的時候，使用相同的方法在頭腦中給音樂分頻，如果這兩個版本在同一個頻段上的聲音上有區別，你就可以通過對這兩次的暫時記憶進行比較得到結論。<br>
+當然，這個方法不是一兩次練習就能夠學會的。需要經常性的練習，形成這樣的聽覺習慣，<br>
+養成這樣的習慣後，當你想要模仿一首歌的混音風格，第一步就可以用大腦分頻法了解曲子的頻率分布特性，接著再去嘗試模仿，<br>
+從模仿的過程中學習混音的思路，為什麼有些頻率多、有些頻率少，而這些頻率上的分布又能給聽眾帶來怎麼樣的感覺，<br>
+累積經驗，將能對之後的混音作品有所幫助。</p>
+<h3 id="不同頻率的特性">不同頻率的特性</h3>
+<p>在前面的文章中有提到《混音全揭密》書中，李金城介紹的頻段範圍和相應的名稱，<br>
+接下來我們就來實作看看，這些頻段對於聽覺上有哪些差別和特性。</p>
+<h4 id="聲音軟硬的定義">聲音軟、硬的定義</h4>
+<p>開始前，先了解聲音中軟、硬的定義，後續我用文字描述時能更好的理解，</p>
+<ol>
+<li>比如，你可以想像手裡拿著一個鉛球，腳下是一片水泥地面，當你用這個鉛球砸向水泥地面的時候，所產生的聲音特性，我們稱之為”堅硬&quot;。<br>
+也就是說，所謂的”硬&quot;，是那種聲音基本沒有迴旋餘地的觸發。</li>
+<li>之後，再來想像一下，你手裡拿著的球換成了一個籃球，而腳下的地板，也變成了木地板。這時候，當你用球砸向地板的時候，產生的聲音不再那麼沒有迴旋餘地，會有一種有”餘音&quot;的感覺，但是聲音的本體，又是有力度的。這種聲音特性，我們稱之為”彈性&quot;。</li>
+<li>最後，就是關於”軟&quot;的定義。我們可以想像手裡拿著一個包裹著海綿的鼓槌，然後你的面前是一面你能想像到的最大的鼓，<br>
+用鼓槌敲擊這面鼓，這個時候，你會聽到”餘音&quot;所占的比例會超過敲擊時產生的聲音本體，或者說，基本上都是轟隆隆的聲音。<br>
+而這種聲音，就是我們所說的柔軟或者是鬆軟了。<br>
+當然，如果不是低頻聲音的柔軟，那麼不會產生轟隆隆的感覺，但是同樣會讓你覺得這個聲音中沒有一個明確的力度點。</li>
+</ol>
+<h4 id="用實戰來了解聲音頻段的特性">用實戰來了解聲音頻段的特性</h4>
+<p>接下來你可以跟著下面我的介紹，自己用一個可以調整q值和gain的eq，嘗試調整這三首歌。<br>
+音樂下載地址:<br>
+<a href="https://drive.google.com/open?id=1Qw9iZcFxHIHDptX9VgIeOTgX6MguWQv5&amp;authuser=c469591%40mail.batol.net&amp;usp=drive_fs" target="_blank" rel="noopener">點我下載</a></p>
+<ol>
+<li>打開reaper，按照上篇文章的介紹，加載一個立體聲的q10或h eq，並設定好軌道發送，<br>
+在每一步會說明q值、增益音量給各位做為參考設定值，以及該頻段的特性，<br>
+每調整一個頻段，你都能在eq軌上按b來旁通，反覆比較eq作用後跟不作用的聲音差別<br>
+你可以只對eq的一個頻段做參數調整，只需要移動頻點、更改q值和gain的音量增益大小</li>
+<li>超低頻:20到80hz<br>
+說明:把一個頻段的頻點設置為40Hz~60Hz之間。Q值為6~10，增益值大約為2.5dB<br>
+特性:聲音鬆軟、會降低整體聲音低頻樂器的力度、具有柔和的低頻彈性<br>
+如果以後再有人告訴你，他需要更有力的大鼓，然後讓你提升60Hz，你可以直接告訴他，那樣只會讓聲音更沒有力度</li>
+<li>低頻:80到250hz<br>
+說明:將頻點改為150hz，q值和增益保持不變，接下來的各頻段不用改變q值和增益<br>
+特性:增加了聲音低頻的力度、使整個低頻部分更有活力</li>
+<li>中低頻:250到800hz<br>
+說明:將頻點改為450左右<br>
+特性:這是一個矛盾的頻段，當這個頻段比較多時，聲音會變得更溫暖，同時也會導致清晰度下降，<br>
+而這個頻段較少時，聲音的清晰度會提升，<br>
+這是溫暖和清晰度的臨界點，也是你對音樂風格把握的一個重點。<br>
+並不是所有音樂都需要非常溫暖的聲音，同時，也並不是所有音樂都需要超高的清晰度。</li>
+<li>中頻:800到2500hz<br>
+說明:將頻點改為1800hz<br>
+特性:首先，聲音更結實了；另外，聲音的距離感變近了，也就是說，整個音樂更加貼近你的臉了。<br>
+這種結實的感覺，有可能體現在各個樂器上，當然，人聲如果有太多的中頻，就可能會顯得很硬，那未必是你想要的結果</li>
+<li>中高頻:2500到5000hz<br>
+說明:將頻點改為3500左右<br>
+特性:聲音具有了一些”刺激感&quot;，或者說，有點刺耳。但是聲音的衝擊力也由此增加了一些。<br>
+很多重金屬風格的音樂就指望這個頻段表現出失真吉他的撕裂感。</li>
+<li>高頻:5000到8000hz<br>
+說明:將頻點改為6500hz<br>
+特性:首先，聲音會出現一定的”磁性&quot;，但是如果你提升多了，聲音同樣會刺耳。<br>
+其次，聲音的顆粒感在這個頻段裡會比較明顯地表現出來。<br>
+另外，還有一個與中低頻很相似的特性，就是清晰度和”冰冷度&quot;，當我們提升這個頻段時，會有整個音樂變得更清晰的感覺，但同時，聲音會變得”冰冷&quot;；而當衰減這個頻段時，聲音會變得溫暖，但是清晰度也會隨之下降。<br>
+由於”冰冷&quot;，還會導致另一個現象，就是聲音很”脆&quot;。這個形容，並非貶義。比如在某些風格的音樂中，你需要一個比較脆的小鼓，那麼適量的高頻就是必不可少的了。</li>
+<li>超高頻:8000到12000hz<br>
+說明:將頻點改為10000hz<br>
+特性:提升同樣會給人以清晰度增加的感覺，但是這種細節感當中還帶有很強的”磁性&quot;，<br>
+10kHz是一個非常重要的頻段，也是衡量一個EQ的超高頻是否好聽的重要依據，尤其是母帶EQ</li>
+<li>極高頻:12000到16000hz<br>
+說明:將頻點改為14000hz<br>
+特性:整個的音樂會變得不耐聽，同時，還要提醒大家，某些歌手的聲音中最難聽的齒音部分，就在13kHz左右。<br>
+當然，這種齒音的收錄有可能是麥克風的原因，而這個頻率其實也是樂隊和人聲的一個分水嶺。</li>
+<li>空氣聲:16000hz以上<br>
+說明:將頻點改為18000hz<br>
+特性:會發現，人聲的清晰度略有增加，而且，整個音樂會變得更加甜美，但同時，音樂的整體力度也在下降。<br>
+因此，千萬不要試圖提升空氣聲頻段讓你的音樂變得在高頻上更有力，那是不現實的。你提升得太多，只會讓聲音變”髒&quot;，變得模糊</li>
+</ol>
+<p>p.s 如果你用q10無法清楚的分辨出那些頻段是什麼聲音，你可以用h eq的頻段solo功能，在上篇有介紹過solo的參數。</p>
+<h3 id="小測驗">小測驗</h3>
+<p>接下來，來讓大家練練耳朵，<br>
+請先將上文中提供的三首歌聽過至少一遍，再回答以下三個問題:</p>
+<ol>
+<li>哪首歌的大鼓低頻最少？</li>
+<li>哪首歌的中頻最少？</li>
+<li>哪首歌的小鼓高頻最少？</li>
+</ol>
+<p>先寫下答案，再往下看喔</p>
+<h3 id="公布答案">公布答案</h3>
+<p>答案:</p>
+<ol>
+<li>第一題答案:<br>
+2.aif的大鼓低頻最少</li>
+<li>第二題答案:<br>
+3.aif的中頻最少</li>
+<li>第三題答案:<br>
+1.aif的小鼓高頻最少</li>
+</ol>
+<hr>
+<p>詳解:</p>
+<ol>
+<li>知道答案很容易，但是得到答案的過程卻是更應該被重視的。<br>
+我們如何得到那些答案呢？其實很簡單，先來看第一個問題：哪首歌的大鼓低頻最少？<br>
+還記得前文講過的低頻頻率特性嗎？裡面最重要的就是力度。那麼想要知道哪首歌的大鼓低頻最少，只要去聽聽哪首歌的大鼓力度最弱，答案也就出來了。<br>
+但是，這個問題中，最容易讓人迷惑的可能是第二首和第三首的區別。第三首的大鼓力度同樣不強，為什麼它的低頻比第二首多呢？來看看低頻的另一個特性——活力，哪首歌的大鼓更有活力。很顯然是第三首。</li>
+<li>再來看第二個問題，哪首歌的中頻最少？這個問題依然要通過頻率特性來分析。<br>
+中頻的特性就是聲音結實，向前靠，那麼哪首歌最不結實，最不靠前呢？答案已經很明顯了</li>
+<li>最後一個問題，其實之前在講解頻段特性的時候已經有過提示了。你只需要聽聽哪首歌的小鼓最”脆&quot;，答案也就很容易得到了。<br>
+在這裡同樣有一個小陷阱，很多人會覺得第一首歌的小鼓高頻最多，因為它聽起來最有力，但是別忘了，高頻帶來的從來都不是力度，<br>
+而是因為第一手的小鼓還疊了一個拍手的聲音，才給人一種高頻更多的錯覺。</li>
+</ol>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-10-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E6%8E%83%E9%A0%BB/" rel="prev">&lt; Reaper Plug Ins系列 10 Waves效果器篇 掃頻</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-8-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E5%9D%87%E8%A1%A1%E5%99%A8%E4%B8%AD%E6%9C%89%E9%82%A3%E4%BA%9B%E6%BF%BE%E6%B3%A2%E5%99%A8%E4%BB%A5%E5%8F%8Awaves%E4%B8%AD%E7%9A%84q10%E5%92%8Ch-eq%E7%9A%84%E8%BB%8C%E9%81%93%E7%99%BC%E9%80%81%E5%92%8C%E5%8F%83%E6%95%B8%E4%BB%8B%E7%B4%B9/" rel="next">Reaper Plug Ins系列 8 Waves效果器篇 均衡器中有那些濾波器以及waves中的q10和h Eq的軌道發送和參數介紹 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

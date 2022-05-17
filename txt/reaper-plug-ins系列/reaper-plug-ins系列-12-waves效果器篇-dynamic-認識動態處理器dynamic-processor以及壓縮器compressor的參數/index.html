@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>Reaper Plug Ins系列 12 Waves效果器篇 Dynamic 認識動態處理器Dynamic Processor以及壓縮器compressor的參數 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper plug-ins系列-12-waves效果器篇 什麼是Dynamic Processo……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-12-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-dynamic-%E8%AA%8D%E8%AD%98%E5%8B%95%E6%85%8B%E8%99%95%E7%90%86%E5%99%A8dynamic-processor%E4%BB%A5%E5%8F%8A%E5%A3%93%E7%B8%AE%E5%99%A8compressor%E7%9A%84%E5%8F%83%E6%95%B8/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2022-02-25T16:06:49+08:00",
+        "dateModified": "2022-04-29T11:38:25+08:00",
+        "url": "http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-12-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-dynamic-%E8%AA%8D%E8%AD%98%E5%8B%95%E6%85%8B%E8%99%95%E7%90%86%E5%99%A8dynamic-processor%E4%BB%A5%E5%8F%8A%E5%A3%93%E7%B8%AE%E5%99%A8compressor%E7%9A%84%E5%8F%83%E6%95%B8/",
+        "headline": "Reaper Plug Ins系列 12 Waves效果器篇 Dynamic 認識動態處理器Dynamic Processor以及壓縮器compressor的參數",
+        "description": "reaper plug-ins系列-12-waves效果器篇 什麼是Dynamic Processo……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  5269 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="Reaper Plug Ins系列 12 Waves效果器篇 Dynamic 認識動態處理器Dynamic Processor以及壓縮器compressor的參數" />
+<meta property="og:description" content="reaper plug-ins系列-12-waves效果器篇 什麼是Dynamic Processo……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-12-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-dynamic-%E8%AA%8D%E8%AD%98%E5%8B%95%E6%85%8B%E8%99%95%E7%90%86%E5%99%A8dynamic-processor%E4%BB%A5%E5%8F%8A%E5%A3%93%E7%B8%AE%E5%99%A8compressor%E7%9A%84%E5%8F%83%E6%95%B8/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2022-02-25T16:06:49&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:38:25&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">Reaper Plug Ins系列 12 Waves效果器篇 Dynamic 認識動態處理器Dynamic Processor以及壓縮器compressor的參數</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:38:25&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;11&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper-plug-ins系列-12-waves效果器篇-什麼是dynamic-processor動態處理器以及認識compressor壓縮器的參數">reaper plug-ins系列-12-waves效果器篇 什麼是Dynamic Processor(動態處理器)以及認識compressor(壓縮器)的參數</h2>
+<p>此篇將介紹何為動態，以及壓縮器的基本參數，<br>
+在動態處理上入門並不難，但要能熟練的活用，是需要花非常多時間鑽研的學問，<br>
+開始前，可以先閱讀這篇文章，先有大概的了解。<br>
+<a href="http://szzyyzz.com/forum.php?mod=viewthread&amp;tid=627&amp;highlight=%C9%A8%C3%A4%C6%AA" target="_blank" rel="noopener">點我看電腦音樂製作掃盲篇-第五章：音頻效果器常識-第二節：動態效果器</a></p>
+<h3 id="介紹">介紹</h3>
+<p>在音樂製作或聲音處理上，沒有一套既定的SOP能夠100%應用在所有專案裡，也沒有一定該怎麼做才能夠得到好聲音。<br>
+無論在Mixing混音階段、Mastering母帶後期製作階段，甚至於Recording錄音階段，Dynamic control永遠都有領略不完的藝術和累積不完的經驗。<br>
+瞭解音訊處理每個參數的意義與連帶動作，才是得到好聲音的關鍵。<br>
+在聲音的世界中，無論何種播放系統都有其專屬的Dynamic動態。<br>
+音樂產業也不例外，當混音師在真正瞭解如何進行Dynamic control動態控制前，先瞭解需要的環境、要以什麼樣的方法去處理怎麼樣的聲音素材，是處理動態的先決條件。<br>
+舉例來説，人耳的動態範圍約為120dB、黑膠唱片的動態範圍約為60dB、FM 廣播的動態範圍約為65dB，<br>
+瞭解不同系統下的動態範圍播放出來的聲響，與聆聽者感受到的動態差異息息相關。</p>
+<h3 id="什麼是電平">什麼是電平?</h3>
+<p>簡單來說，電平是我們在daw中用來描述聲音訊號大小的單位，也可以理解成音量大小，<br>
+daw大家應該不陌生，也就是數位聲音工作站，我們所用的reaper就是DAW的其中一種，<br>
+在DAW中，0.0DB是電平可接受的最大值，當電平超過0.0DB時就會過載，也就是破音，<br>
+所有的聲音訊號都要在0.0DB以下，才不會造成聲音的失真，<br>
+當電平越接近0DB，我們可以說電平越高，<br>
+當電平低於0DB越多，我們可以說電平越低，<br>
+以-3dB為例，-2dB與-1dB，都算是比-3dB還大的數值。<br>
+相反的，-10dB或-20dB數值相較於0dB都算是較小的數值。</p>
+<h3 id="什麼是動態處理">什麼是動態處理?</h3>
+<p>混音工作有許多方式可以調整與控制聲音訊號的動態，<br>
+像是Compressor壓縮器、Limiter限幅器、Expander擴展器、Noise gate噪音閘門，<br>
+另外，還可以透過Automation自動化控制或是調整單一聲音素材的音量大小，即便方法不同，都可以達到動態控制的目的。<br>
+因此，當瞭解何謂動態後，混音工程中一個相當重要的名詞出現了— Dynamic range，<br>
+它指的是系統裡容納的最大音量與最小音量之間的差異值。控管好Dynamic range除了能夠讓整首歌曲的聲音情緒更有張力，在音質的顯現上也能更加完美。</p>
+<hr>
+<p>而我們在DAW使用的各類動態效果器，其工作原理都差不多<br>
+那就是使用輸入電平與閾值電平進行比較，接著對高於或者低於閾值的輸入訊號進行處理，最終形成輸出訊號。</p>
+<h3 id="什麼是壓縮器">什麼是壓縮器?</h3>
+<p>壓縮器，顧名思義，就是把聲音訊號進行[壓縮]。<br>
+這裡的壓縮，指的是動態方面的壓縮。</p>
+<hr>
+<p>動態:動態範圍的簡稱。<br>
+指的是某一段聲音從最低電平到最高電平的差值。通過壓縮器的處理，我們通常會得到比原始聲音訊號動態更小的訊號。<br>
+壓縮器將輸入訊號電平與閾值進行比較之後，通常將高於閾值的電平按照一定的比例進行降低，由此得到壓縮後的聲音。</p>
+<hr>
+<p>那麼，壓縮器在音樂混音中起到了什麼作用呢？壓縮器在最初的年代，主要作用是控制電平的動態。<br>
+有一些樂器，或者人聲，動態是非常大的，但當時的錄音設備無法記錄那麼大的動態範圍，<br>
+因此，需要通過壓縮器來控制聲音的動態以完成錄音。<br>
+但，隨著科技的發展與聲音處理技術的進步，在今天壓縮器的主要作用已經不是用於控制聲音的動態，而是用於製作你想要的音色，<br>
+從動態方面去塑造音色。這才是壓縮器在今天真正的作用。</p>
+<h3 id="什麼是擴展器">什麼是擴展器?</h3>
+<p>而擴展器，就是把聲音訊號進行動態上的擴展。<br>
+擴展器通過以輸入聲音的電平與閾值進行比較，將低於閾值的電平按照一定比例進行壓縮。<br>
+也就是說，它使得低電平訊號變得更低，而高電平訊號則維持不動。<br>
+如此，就形成了對於聲音動態的擴展。</p>
+<h3 id="compressor壓縮器參數的基本概念">compressor(壓縮器)參數的基本概念</h3>
+<p>要想成功地做出自己想要的音色，就必須瞭解壓縮器每一個功能、參數對於聲音的影響。<br>
+下面來介紹一下標準壓縮器上面都會有的四個基本參數，<br>
+壓縮比、閾值、啟動時間和釋放時間。</p>
+<ol>
+<li>閾值：<br>
+壓縮器用於和輸入電平進行比較的電平值，經過比較後，壓縮器會按照壓縮比降低高於閾值的輸入訊號。</li>
+<li>壓縮比：<br>
+當輸入電平超過閾值時壓縮器進行壓縮的比率。<br>
+其公式是：
+<ul>
+<li>在壓縮器處於啟動時間和穩態工作過程中<br>
+壓縮比(R)= (輸入電平I - 閾值T)÷(輸出電平O - 閾值T)</li>
+<li>在壓縮器處於釋放時間過程中:<br>
+壓縮比(R)=(輸出電平O - 閾值T) ÷ (輸入電I - 閾值T)。</li>
+</ul>
+</li>
+<li>啟動時間：<br>
+當輸入電平超過閾值時，壓縮器的壓縮比從1：1(無壓縮狀態)變化為設定好的壓縮比所用的時間。</li>
+<li>釋放時間：<br>
+當輸入電平自上而下低於閾值時，壓縮器的壓縮比從設定好的壓縮比變化為1：1無壓縮所用的時間。</li>
+</ol>
+<p>p.s 接下來我會詳細介紹這四個參數、以及其他很多效果器都會出現的參數。</p>
+<h4 id="threshold閾值">threshold(閾值)</h4>
+<p>首先，閾值是最好理解的。我們給壓縮器設置一個參考電平，讓壓縮器能夠得到一個最基本的判斷依據，也就是告訴壓縮器要從多高電平開始進行壓縮。<br>
+如果這個電平設置得過高，以至於輸入電平一直達不到閾值的話，就會使壓縮器完全不工作。<br>
+而當這個電平設置得過低，又可能導致壓縮器過分地工作，從而使聲音變得難聽。</p>
+<h4 id="ratio壓縮比">Ratio(壓縮比)</h4>
+<p>壓縮比，是基於閾值之後的壓縮器處理依據，也就是告訴壓縮器到底要壓縮多少量，<br>
+壓縮比越大，在其他參數不變的情況下，壓縮器對於輸入訊號所產生的壓縮量也就越大。反之亦然。<br>
+假設壓縮比為2：1，那麼當輸入電平超過閾值時，輸入電平每增加2dB，輸出電平才增加1dB。<br>
+當然，這是在不考慮啟動和釋放時間的情況下，否則會複雜很多。</p>
+<h4 id="attack-time啟動時間">attack time(啟動時間)</h4>
+<p>當輸入電平沒有達到閾值時，壓縮器處於不工作狀態，此時的壓縮比為1:1，也就是一比一<br>
+當輸入電平高於閾值時，壓縮器進入啟動時間，<br>
+此時壓縮器會開始逐漸增加壓縮比，這是一個過程，而不是瞬間就達到設定的壓縮比，<br>
+我們可以人為地設定這個過程的時間。而這個時間，就是啟動時間。<br>
+對於啟動時間這個概念外界通常有兩個誤解。一種是認為啟動時間是壓縮器自身需要的反應時間。<br>
+壓縮器到底需不需要反應時間？答案是肯定的。但是壓縮器的反應時間是微秒級別的，因此可以忽略不計。<br>
+另一個誤解是認為壓縮器在啟動時間過程中什麼都不做，直到啟動時間結束，才突然啟動，也就是所謂的避過音頭。這個理解是不對的，<br>
+我們的確可以避過音頭，但即便如此，在這個過程中，壓縮器實際上已經處於壓縮的工作狀態了，只不過壓縮比可能還比較低，人耳無法察覺而已。</p>
+<h4 id="release-time釋放時間">release time(釋放時間)</h4>
+<p>而釋放時間，就是啟動時間的反向過程，<br>
+在這個過程中，壓縮器仍然是在改變壓縮比，只不過是從設定好的壓縮比變回原本的無壓縮狀態。</p>
+<h4 id="knee拐點弧度曲線">Knee(拐點、弧度曲線)</h4>
+<p>Knee用來控管受Attack與Decay所控制進行Gain reduction的聲音訊號的細緻度與轉換程度。<br>
+在Knee的調整上，往往能夠以Soft圓滑或是Hard堅硬的方式進行壓縮，不同的弧度可以呈現出溫和或者暴力兩種截然不同的聲音表現。</p>
+<ul>
+<li>Soft knee圓滑弧度曲線的壓縮較適合柔軟且溫和的聲音，像是人聲或是群組所設置的軌道，<br>
+在較圓滑的銜接處理上，能夠盡量避免因為Compressor的壓縮而破壞了聲音素材原先的表現。<br>
+但當聲音訊號的動態變化非常大時，Soft knee的壓縮也容易因為太過於柔軟而聽不出效果。</li>
+<li>Hard knee堅硬弧度曲線的壓縮則常被拿來處理需要展現力道與速度顆粒的聲音，<br>
+此時的壓縮效果將會非常直接明顯且強硬，貝斯或節奏類樂器常採用此種參數設定。</li>
+</ul>
+<p>並非所有的Compressor都擁有可操控的Knee參數，且不同廠牌、不同類型的Compressor，其Soft與Hard的作用方式與表現方法是截然不同的。<br>
+因此，Soft knee與Hard knee的選擇上並沒有強制的規定，需要視曲風與製作階段，並依照耳朵的聆聽來判斷。<br>
+善用各家廠牌的Knee參數，便能夠協助混音師依照不同狀況來展現聲音訊號的特色。</p>
+<h4 id="make-up-gain輸入增益與output-gain輸出增益">Make-Up Gain(輸入增益)與Output Gain(輸出增益)</h4>
+<p>透過Gain增益可以用來放大或縮小輸入與輸出的整體聲音訊號音壓大小。</p>
+<h4 id="key-input旁路線路連結口">Key Input(旁路線路連結口)</h4>
+<p>Key input提供了 Compressor額外設定的Bus匯合箱入口，用來連接啓動旁路所設置的線路訊號，<br>
+進而製作較為進階的Side-chain compression(側鏈壓縮)技巧的串聯設定。</p>
+<h4 id="stereo-link立體聲連結">Stereo Link(立體聲連結)</h4>
+<p>許多廠牌研發的效果器有單聲道、立體聲不同款式之分，<br>
+Stereo link按鈕提供了使用者在使用Stereo compressor立體聲壓縮器時，將左右輸入的訊號連結在一起的能力，能夠一次性的以相同參數來控制雙聲道的聲音訊號。<br>
+這點在處理左右相同，但卻是立體聲軌道屬性的狀況上非常重要，能夠避免在壓縮立體聲音訊時，產生左右聲音訊號不同的立體聲的情況。</p>
+<h3 id="壓縮器的工作流程">壓縮器的工作流程</h3>
+<p>壓縮器的工作流程可分為四個狀態:<br>
+不工作狀態(壓縮比1:1)→啟動時間(逐漸增加壓縮比)→穩態壓縮狀態(達到所設定的壓縮比)→釋放時間(從穩態壓縮逐漸回到1:1的壓縮比)</p>
+<h3 id="壓縮器的使用思路">壓縮器的使用思路</h3>
+<ol>
+<li>先透過Threshold決定啟動值，藉此控管究竟哪些聲音訊號需要被壓縮</li>
+<li>接著依照Ratio來設定壓縮的聲音訊號比例</li>
+<li>再透過Attack來決定聲音訊號該以怎麼樣的速度反應到聲音的Peak</li>
+<li>然後以Release決定聲音訊號至完全消失的速度</li>
+</ol>
+<h3 id="補充">補充</h3>
+<h4 id="downward-compression向下壓縮與upward-compression向上壓縮">Downward Compression(向下壓縮)與Upward Compression(向上壓縮)</h4>
+<p>一般提到的Compressor大部分意指 Downward compression。此種Compressor極為常見，幾乎所有的DAW數位音訊工作站或是硬體設備皆擁有此種壓縮法。<br>
+此種壓縮法，凡低於Threshold設定值的聲音將不受Compressor的影響，僅有通過Threshold的聲音訊號會受到壓縮。</p>
+<hr>
+<p>與Downward compression相反的壓縮器稱為Upward compression。<br>
+壓縮器的Upward模式是針對未達到Threshold啓動值的聲音訊號進行壓縮，藉此提升啓動值以下的聲音訊號，而超越啓動值的響亮部分不會受到Compressor的影響。</p>
+<hr>
+<p>相較於Downward compressor，擁有Upward功能的Compressor較為稀少，但它卻是Mastering母帶後期製作階段不可或缺的工具，<br>
+透過Upward compressor可以眞正提升整體音量，又能夠避免上半段音訊的破壞。</p>
+<h4 id="fixed-threshold-compressor固定閘門壓縮器">Fixed Threshold Compressor(固定閘門壓縮器)</h4>
+<p>一般的Compressor都具有Input level 輸入音量、Threshold、Ratio、Attack、Release、Output gain 這些基本的控制參數。<br>
+然而，某些沒有Threshold參數旋鈕的Compressor，並不代表它沒有Threshold的操控選項。這種Compressor的Threshold數值固定為原廠設定，因此被稱為Fixed threshold compressor。</p>
+<hr>
+<p>Fixed threshold compressor的操作與一般Compressor的操作略有不同。<br>
+由於Threshold是固定的，因此在調整上必須透過Input level來控制Compressor的輸入訊號，當想要整體聲音訊號受到更多壓縮時，再透過Input level來增加聲音訊號的流入，藉此改變Compressor上的壓縮差異。<br>
+若是以Ratio設定為4:1為例，當聲音訊號超越4dB，此時Fixed threshold compressor就會讓1dB通過。</p>
+<hr>
+<p>像出現在各大錄音室中最經典的Urei 1176，還有知名的效果器公司Softube推出的FET compressor，都是固定Threshold參數的Compressor，<br>
+在我們所用的waves裡，也有類比1176的plug-in版可以使用，<br>
+只要在fx視窗的編輯框裡輸入76，就能找到:<br>
+VST3: CLA-76 Mono (Waves)<br>
+VST3: CLA-76 Stereo (Waves)</p>
+<h3 id="multi-band-compressor多重壓縮器">Multi-Band Compressor(多重壓縮器)</h3>
+<p>有時候單純使用EQ均衡器來處理與改變音色時，總會覺得就是差這麼一點點，好比隔靴搔癢卻搔不到癢處。<br>
+此時Multi-band compressor就派上用場了。Multi-band compressor的特色在於可以指定聲音頻段加以壓縮，而非整體聲音訊號的壓縮。</p>
+<hr>
+<p>極為著名的L3-16 Multimaximizer就是非常好的範例。L3-16 雖命名為16 band level control，實質上是透過6 band control來依照不同頻率、頻段來執行聲音壓縮。它透過Gain將數值往上拉，來減少該頻段的壓縮；<br>
+透過Gain將數值往下拉，可以增加該頻段的壓縮。<br>
+正因為多了EQ的頻率調整模式，使得聲音壓縮的操作更加靈活有彈性與複雜，透過Multi-band Compressor，混音師可以選擇任何頻率後進行壓縮，<br>
+而每個Band頻段還可以選擇不同的Filter濾波器（Bell鐘型或Low-shelf低擱架模式）做更進階的壓縮。</p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-13-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-compressor%E5%A3%93%E7%B8%AE%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev">&lt; Reaper Plug Ins系列 13 Waves效果器篇 Compressor壓縮器的使用</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper-plug-ins%E7%B3%BB%E5%88%97/reaper-plug-ins%E7%B3%BB%E5%88%97-11-waves%E6%95%88%E6%9E%9C%E5%99%A8%E7%AF%87-%E7%94%A8%E8%81%BD%E8%A6%BA%E4%BA%86%E8%A7%A3%E9%A0%BB%E8%AD%9C%E7%9A%84vst%E4%BB%A5%E5%8F%8A%E5%9D%87%E8%A1%A1%E5%99%A8%E7%9A%84%E9%AB%98%E4%BD%8E%E5%88%87%E5%92%8C%E6%8E%A7%E5%88%B6%E8%81%B2%E9%9F%B3%E9%81%A0%E8%BF%91%E7%9A%84%E6%96%B9%E6%B3%95/" rel="next">Reaper Plug Ins系列 11 Waves效果器篇 用聽覺了解頻譜的vst以及均衡器的高低切和控制聲音遠近的方法 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

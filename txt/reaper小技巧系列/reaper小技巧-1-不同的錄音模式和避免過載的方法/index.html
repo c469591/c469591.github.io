@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper小技巧-1 避免過載的方法和不同的錄音模式 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper小技巧-1 避免過載的方法和不同的錄音模式 這篇會介紹除了標準錄音之外的兩種……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-1-%E4%B8%8D%E5%90%8C%E7%9A%84%E9%8C%84%E9%9F%B3%E6%A8%A1%E5%BC%8F%E5%92%8C%E9%81%BF%E5%85%8D%E9%81%8E%E8%BC%89%E7%9A%84%E6%96%B9%E6%B3%95/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:00+08:00",
+        "dateModified": "2022-04-29T11:58:07+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-1-%E4%B8%8D%E5%90%8C%E7%9A%84%E9%8C%84%E9%9F%B3%E6%A8%A1%E5%BC%8F%E5%92%8C%E9%81%BF%E5%85%8D%E9%81%8E%E8%BC%89%E7%9A%84%E6%96%B9%E6%B3%95/",
+        "headline": "reaper小技巧-1 避免過載的方法和不同的錄音模式",
+        "description": "reaper小技巧-1 避免過載的方法和不同的錄音模式 這篇會介紹除了標準錄音之外的兩種……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3216 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper小技巧-1 避免過載的方法和不同的錄音模式" />
+<meta property="og:description" content="reaper小技巧-1 避免過載的方法和不同的錄音模式 這篇會介紹除了標準錄音之外的兩種……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-1-%E4%B8%8D%E5%90%8C%E7%9A%84%E9%8C%84%E9%9F%B3%E6%A8%A1%E5%BC%8F%E5%92%8C%E9%81%BF%E5%85%8D%E9%81%8E%E8%BC%89%E7%9A%84%E6%96%B9%E6%B3%95/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:00&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:58:07&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper小技巧-1 避免過載的方法和不同的錄音模式</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:58:07&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper小技巧-1-避免過載的方法和不同的錄音模式">reaper小技巧-1 避免過載的方法和不同的錄音模式</h2>
+<p>這篇會介紹除了標準錄音之外的兩種錄音模式，時間選區以及選定對象的錄音，<br>
+另外也會介紹用峰值監視器避免音量過載的方法。</p>
+<h3 id="用峰值監視器來避免音量過載">用峰值監視器來避免音量過載</h3>
+<p>在錄音開始前，第一個動作就是測試麥克風的聲音，除了看看有沒有聲音外，還要注意是否會破音，<br>
+很多錄音軟體都能從畫面上看到訊號輸入時的峰值大小，明眼人可以很輕鬆地知道聲音是否過載。<br>
+那什麼是過載？簡單來說，最大音量超過0.0DB那就是過載，0.0db在電腦的世界裡是能被完整記錄下來的最大音量，<br>
+當音量的最高峰超過0.0DB時，就超越了能被電腦記錄下來的極限，也就會導致破音、失真，<br>
+還好在reaper裡，我們就能透過osara輔助插件提供的峰值監視器，來觀察音量是否已經超過了0.0DB的臨界點，而且還超簡單，<br>
+另外要補充的是，在錄音時我們的最大峰值最好控制在-10DB到-3.0DB這個區間，<br>
+這樣的好處是給後製留出一些可以操作的空間，也不會過載，以後的文章我也會分享用壓縮器、限制器讓聲音不過載的技巧，近請期待，<br>
+現在先來說說峰值監視器的用法。<br>
+p.s 2022年的osara輔助插件對峰值監視器有重大的更新，下面的說明會以2022年新版的osara插件來介紹</p>
+<ol>
+<li>在reaper裡找到要觀察峰值的軌道，然後按<br>
+alt+w 打開峰值監視器</li>
+<li>此時會打開一個選單，你可以選擇<br>
+第1監視器, 未配置<br>
+或<br>
+第2監視器, 未配置<br>
+選擇其中一個按enter，但後續查看的快速鍵會有所不同，這裡我們先選第一監視器</li>
+<li>接下來會打開監視器的設定視窗，直接按enter，設定視窗會關閉，這樣就開始監視了</li>
+<li>接下來按空格播放，在播放的同時可以按
+<ul>
+<li>alt+f11 查看從上次重製到現在監視到的左聲道最大峰值</li>
+<li>alt+f12 查看從上次重製到現在監視到的右聲道最大峰值</li>
+<li>alt+f10 重製第一峰值監視器<br>
+來觀察最大峰值的大小</li>
+</ul>
+</li>
+<li>如果前面你是選擇第二監視器，只要在第一監視器的快速鍵基礎上加上shift就能查看，也就是
+<ul>
+<li>shift+alt+f11 查看從上次重製到現在監視到的左聲道最大峰值</li>
+<li>shift+alt+f12 查看從上次重製到現在監視到的右聲道最大峰值</li>
+<li>shift+alt+f10 重製第二峰值監視器<br>
+來觀察最大峰值的大小</li>
+</ul>
+</li>
+<li>如果你想監視的是所有軌道混合的音量，那你需要監視主控軌，你要按<br>
+ctrl+shift+alt+m 來顯示主控軌<br>
+之後按上找到主控軌，一樣用第一或第二監視器來觀察峰值</li>
+</ol>
+<h3 id="小知識補充">小知識補充</h3>
+<p>我們知道一首歌在播放時一定會有高潮跟鋪陳的段落，也就能明白聲音是時時在變化的，<br>
+當我們用峰值監視器觀察的時候，峰值監視器只會看到已經播放過的部分，還沒有播放的部分是無法知道是否有過載的，<br>
+且所查看的值是最大值，而不是恆定的值。<br>
+在使用監視器的時候，可以跳到比較高潮或音量較大的段落開始播放，以此查看是否過載，<br>
+另外也可以在軌道上按<br>
+j 或 k 來查看按下去那瞬間左、右聲道的峰值<br>
+不過這個方法只能看個大概，說不定過載的那瞬間剛好讓你錯過了，所以保險一些我還是都用峰值監視器，<br>
+另外如果你的卡無法從硬體旋鈕調整音量，你可以從reaper控制軌道音量或用音量包絡的方式來增減音量，<br>
+關於包絡和軌道音量可以參考這篇:<br>
+<a href="https://www.nvda.org.tw/teaching/article/ui=2004160143tm=1963274910" target="_blank" rel="noopener">點我看reaper快速入門-3 音量、升降調、速度、向位的使用以及插入媒體文件</a></p>
+<h3 id="為什麼要有兩個峰值監視器">為什麼要有兩個峰值監視器</h3>
+<p>在2022年的osara更新中，輔助插件的開發團隊增加了峰值監視器的功能，<br>
+峰值觀察器不再是只能監視聲音的峰值，還能用來監視compressor(壓縮器)壓縮了多少音量，<br>
+讓廣大的盲人可以更清楚的知道使用的壓縮器究竟壓縮了多少音量，也因此把峰值監視器變成了兩個，<br>
+你可以同時監視某條軌道的最大峰值，也能觀察軌道上的壓縮器壓了多少音量，<br>
+如果你想使用峰值監視器監視壓縮器，你可以打開fx視窗，上、下找到壓縮器，之後按alt+w來選擇第一或第二監視器來監視，<br>
+新版的峰值監視器還能以不同的音量單位來監視，例如LUFS，這裡就不再贅述了，我會在另一個系列詳細的介紹新版的峰值監視器，<br>
+如果你對壓縮器或其他效果器有興趣，你可以看看我原創的效果器文章→<br>
+<a href="https://lamb.tw/categories/reaper-plug-ins%E7%B3%BB%E5%88%97/" target="_blank" rel="noopener">reaper plug-ins插件、效果器系列 (15)</a></p>
+<h3 id="錄音的對象解析">錄音的對象解析</h3>
+<p>我們知道標準錄音完畢後，軌道上會多出一個對象，這個對象裡就存儲了錄音進去的訊號，<br>
+而當我們在同一條軌道再次錄音，reaper就會把跟第一次錄音重疊的部分，另外新增成一個新的片段，<br>
+打個比方，假如第一次錄音長度為十分鐘，第二次錄音在五分鐘開始、六分鐘結束，此時本來只有一個對象就會被切成三個對象，<br>
+對象的排列是由時間先後順序排列，也就會像這樣:<br>
+第一個對象[一到五分鐘]→第二個對象[五到六分鐘]→第三個對象[六到十分鐘]<br>
+其中五到六分鐘的對象會存放兩個片段，第一個片段是第一次錄音的聲音，第二個片段是第二次的錄音，<br>
+這時我們能用ctrl+左、右切到第二個對象按t來切換片段。</p>
+<hr>
+<p>但標準錄音有個特性，當我們按r開始錄音時，錄音就立即開始了，<br>
+如果我在錄唱歌，我想邊聽伴奏邊唱，到了我指定的區域在啟動錄音，標準錄音模式就無法滿足我們的需求，<br>
+此時就會需要用到選定區域的錄音模式，這樣我們就能跟著唱，選定區域前不管怎麼嘶吼都不會錄進去，直到指定的區域才啟動錄音。</p>
+<h3 id="錄音模式-時間選擇自動穿入穿出">錄音模式: 時間選擇自動穿入/穿出</h3>
+<ol>
+<li>在reaper上按alt，接著打一個o，或左、右找<br>
+選項(O)  子功能表  Alt+o</li>
+<li>上、下找<br>
+錄音模式: 時間選擇自動穿入/穿出<br>
+按enter，將其勾選</li>
+<li>此時會回到reaper的軌道介面，上、下找要錄音的軌道，用跳轉小節、拍子跟左右的快速鍵，移動到要啟動錄音的開始位置，接著按<br>
+[ 左中括號，來標記開始點，語音會朗讀，设置选区开始 <br>
+p.s 中括號在英文p的右邊，反斜線的左邊兩顆</li>
+<li>接著繼續用移動編輯光標的快速鍵找到要標記結束點的位置按<br>
+] 右中括號，來標記結束點，語音會朗讀，设置选区结束</li>
+<li>按<br>
+ctrl+r<br>
+啟動重複播放，再按home跳到開始點的位置，按空格播放，聽看看包起來的是不是我們要進行錄音的範圍</li>
+<li>確認後按ctrl+r關閉重複播放</li>
+<li>f7打開錄音準備，可以跳到選定區域前面一些的地方按r開始錄音，<br>
+此時就會播放軌道上本來的聲音，直到標記的選定區域才會啟動錄音</li>
+<li>錄音完成後可以找到有兩個片段的對象來挑選較好的片段，或是重新按r再錄一次，也能按ctrl+z來撤銷上次的動作</li>
+<li>完成這個選區的錄音後，記得按<br>
+esc 取消選定區域<br>
+否則你之後的錄音只有到選區的位置才會啟動錄音</li>
+<li>按照第一步驟將錄音模式調回<br>
+錄音模式: 標准<br>
+按enter，之後就可以繼續其他的編輯動作了</li>
+</ol>
+<h3 id="錄音模式-自動-穿入穿出選定對象">錄音模式: 自動-穿入/穿出選定對象</h3>
+<p>這種錄音模式其實跟選定區域的錄音模式很像，唯一的不同是選區的錄音是軟體自動把對象切成好幾份，而對象錄音是要我們自己切，接下來說說步驟。</p>
+<ol>
+<li>找到要錄音的軌道，用移動光標的快速鍵找到要切的位置，找到後按<br>
+s 分割對象，將對象切兩半<br>
+此時在切下去的時間點之前會變成一個對象，之後的也會變成一個對象</li>
+<li>接下來ctrl+左右找到切下去後面的對象，繼續用移動光標的快速鍵找到要切的位置，按<br>
+s 分割對象，又切兩半</li>
+<li>此時會有三個對象，像這樣<br>
+我是一號對象→s切的第一刀→我是二號對象→s第二刀→我是三號對象</li>
+<li>按ctrl+左、右選擇要錄音的對象，按幾下page up跳到前面一點的位置，按f7錄音準備，r開始錄音</li>
+<li>此時開始播放軌道上的聲音，一直到選定對象的位置啟動錄音</li>
+<li>按r結束錄音後可以按空格聽看看效果，如果你切錯地方或是不想保存錄音都能按ctrl+z 來撤銷</li>
+</ol>
+<p>ok，這樣就都學會了，祝你能錄出好作品囉。</p>
+<h3 id="最後補充">最後補充</h3>
+<p>其實現在很多流行音樂，在錄音時都是分段錄的，比較少會一次錄好，都會分成好幾段錄再挑好的出來用，<br>
+更挑剔的可能還是一句一句錄的，不過平常在家宅錄的話其實不用搞這麼麻煩，畢竟業餘歌手不論技術還是設備都是無法跟專業錄音室匹敵的，所以不用太糾結，對我來說只要聽得舒服、不要太差就很ok啦。</p>
+<h3 id="快速鍵">快速鍵</h3>
+<ul>
+<li>alt+w 打開峰值監視器</li>
+<li>alt+f11 (第一監視器)查看從上次重製到現在監視到的左聲道最大峰值</li>
+<li>alt+f12 (第一監視器)查看從上次重製到現在監視到的右聲道最大峰值</li>
+<li>alt+f10 重製第一峰值監視器</li>
+<li>shift+alt+f11 (第二監視器)查看從上次重製到現在監視到的左聲道最大峰值</li>
+<li>shift+alt+f12 (第二監視器)查看從上次重製到現在監視到的右聲道最大峰值</li>
+<li>shift+alt+f10 重製第二峰值監視器</li>
+<li>s 分割對象</li>
+</ul>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-2-%E5%BE%8C%E8%A3%BD%E5%BF%85%E9%A0%88%E6%87%82%E5%BE%97%E6%B3%A2%E7%B4%8B%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%B0%8D%E8%B1%A1%E7%B7%A8%E8%BC%AF%E5%89%AA%E9%88%B4%E8%81%B2%E4%B9%9F%E5%8F%AA%E6%98%AF%E5%B0%8F%E4%BA%8B%E4%B8%80%E6%A8%81/" rel="prev">&lt; reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/izoto-rx9/%E8%81%B2%E9%9F%B3%E8%99%95%E7%90%86%E7%9A%84%E8%90%AC%E7%94%A8%E5%B7%A5%E5%85%B7izotope-rx9-1-%E8%AA%8D%E8%AD%98rx9%E7%9A%84%E4%BB%8B%E9%9D%A2%E4%BB%A5%E5%8F%8A%E6%8E%A8%E8%96%A6%E4%B8%80%E5%AE%9A%E8%A6%81%E8%A8%98%E4%BD%8F%E7%9A%84%E5%BF%AB%E9%80%9F%E9%8D%B5%E5%92%8C%E4%B8%80%E5%80%8B%E5%8F%AF%E4%BB%A5%E5%B9%AB%E5%8A%A9%E6%93%8D%E4%BD%9C%E7%9A%84nvda%E9%99%84%E5%8A%A0%E5%85%83%E4%BB%B6/" rel="next">聲音處理的萬用工具izotope rx9-1 認識rx9的介面，以及推薦一定要記住的快速鍵和幾個可以幫助操作的工具 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

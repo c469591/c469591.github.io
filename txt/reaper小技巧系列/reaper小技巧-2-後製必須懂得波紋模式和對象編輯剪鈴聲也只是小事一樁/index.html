@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁 這……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-2-%E5%BE%8C%E8%A3%BD%E5%BF%85%E9%A0%88%E6%87%82%E5%BE%97%E6%B3%A2%E7%B4%8B%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%B0%8D%E8%B1%A1%E7%B7%A8%E8%BC%AF%E5%89%AA%E9%88%B4%E8%81%B2%E4%B9%9F%E5%8F%AA%E6%98%AF%E5%B0%8F%E4%BA%8B%E4%B8%80%E6%A8%81/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:01+08:00",
+        "dateModified": "2022-04-29T11:58:39+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-2-%E5%BE%8C%E8%A3%BD%E5%BF%85%E9%A0%88%E6%87%82%E5%BE%97%E6%B3%A2%E7%B4%8B%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%B0%8D%E8%B1%A1%E7%B7%A8%E8%BC%AF%E5%89%AA%E9%88%B4%E8%81%B2%E4%B9%9F%E5%8F%AA%E6%98%AF%E5%B0%8F%E4%BA%8B%E4%B8%80%E6%A8%81/",
+        "headline": "reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁",
+        "description": "reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁 這……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  2410 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁" />
+<meta property="og:description" content="reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁 這……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-2-%E5%BE%8C%E8%A3%BD%E5%BF%85%E9%A0%88%E6%87%82%E5%BE%97%E6%B3%A2%E7%B4%8B%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%B0%8D%E8%B1%A1%E7%B7%A8%E8%BC%AF%E5%89%AA%E9%88%B4%E8%81%B2%E4%B9%9F%E5%8F%AA%E6%98%AF%E5%B0%8F%E4%BA%8B%E4%B8%80%E6%A8%81/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:01&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:58:39&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:58:39&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;5&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper小技巧-2-後製必須懂得波紋模式和軌道上的對象編輯剪鈴聲也只是小事一樁">reaper小技巧-2 後製必須懂得波紋模式和軌道上的對象編輯，剪鈴聲也只是小事一樁</h2>
+<p>這篇會說到軌道上對象的移動、裁切、混合等等的操作方法，也會提到剪鈴聲的步驟，有興趣的可以好好學學，<br>
+另外後面會用到移動編輯光標的快速鍵，如果你忘了，可以到這篇查一查，按h跳標題會比較快喔<br>
+<a href="https://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-8-%E5%B8%B8%E7%94%A8%E5%BF%AB%E9%80%9F%E9%8D%B5%E7%B8%BD%E6%95%B4%E7%90%86/" target="_blank" rel="noopener">點我查看常用快速鍵總整理</a><br>
+如果你還沒看過之前跟錄音有關的文章，可以<br>
+<a href="https://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-2-%E9%8C%84%E9%9F%B3%E5%92%8C%E7%AF%80%E6%8B%8D%E5%99%A8/" target="_blank" rel="noopener">點我查看reaper快速入門-2 錄音和節拍器</a></p>
+<h3 id="波紋模式">波紋模式</h3>
+<p>在reaper有三種波紋模式，不同的模式會大大影響著我們裁剪對象時的結果，<br>
+切換波紋模式的方法是在reaper的視窗內按<br>
+shift+alt+p切換波紋模式<br>
+接下來說說三種模式的特性。</p>
+<ol>
+<li>波紋關<br>
+五分鐘的音樂如果刪除了三到四分鐘的片段:<br>
+1到3分鐘的音樂→3到4分鐘的空白區域→四到五分鐘的音樂</li>
+<li>波紋單條軌<br>
+五分鐘的音樂如果刪除了三到四分鐘的片段:<br>
+1到3分鐘的音樂→直接無縫接到四到五分鐘的音樂</li>
+<li>波紋全部軌<br>
+五分鐘的音樂如果刪除了三到四分鐘的片段:<br>
+1到3分鐘的音樂→工程內所有軌道的3到4分鐘的區域將全部被刪除，並且所有軌道直接無縫接到四到五分鐘的音樂</li>
+</ol>
+<hr>
+<p>了解了波紋的工作模式，你就明白如果做音樂還是設波紋關比較好，如果設成其他模式會破壞音樂的節奏，<br>
+至於波紋單條軌、全部軌，則比較適合做聲音的剪輯，<br>
+要注意的是，當波紋模式開啟的狀態下，插入媒體文件也會有相同的效果，<br>
+也就是在a對象之前插入b對象時，a對象會被擠到b對象後，<br>
+如果再a對象後插入b對象，不管貼上的位置距離a對象的結尾有多長的空白區域，b對象都會被自動貼齊到a對象的結尾處，<br>
+所以不管做什麼，用對方法很重要。</p>
+<h3 id="對象的移動">對象的移動</h3>
+<p>當我們插入了一個媒體文件，或是錄了一段聲音，我們可以隨意的移動對象到我們想讓他出現的時間位置。</p>
+<ol>
+<li>在reaper按上、下找到要移動對象的軌道</li>
+<li>按<br>
+ctrl+左、右 選擇對象</li>
+<li>按<br>
+, 英文逗號，將對象往開頭處移動<br>
+. 英文句號，將對象往結尾處移動<br>
+p.s 這兩個鍵在英文m的右邊兩顆</li>
+<li>另外如果你覺得移動得太慢或太快，可以按<br>
+小鍵盤加號 來縮小移動間距，或是<br>
+小鍵盤減號 來放大移動間距</li>
+<li>最後，移動完可以按<br>
+ctrl+shift+j 來查看對象所在的時間位置<br>
+要注意的是有時候其實已經動了，但是按這組快速鍵仍然在原地，只要重新按ctrl+左、右重新選擇對象在查看一下位置就正常了</li>
+</ol>
+<h3 id="刪除選定區域">刪除選定區域</h3>
+<p>選定某個區域的方法其實在前面的文章已經有分享過，這裡在複習一下。</p>
+<ol>
+<li>按快速鍵將編輯光標移動到要標記開始點的位置按<br>
+[ 左中括號，你會聽到設置選區開始，而設結束點的方法也是一樣，移動編輯光標到要結束的位置按<br>
+] 右中括號，你會聽到設置選區結束<br>
+p.s 中括號位於英文p的右邊兩顆</li>
+<li>注意波紋的模式，每次開啟reaper都是波紋關，依照需要來切換所需的模式</li>
+<li>接著按<br>
+刪除鍵<br>
+你會聽到已移除的時間選區內容，這樣就刪除了，可以重投按空格播放聽看看，<br>
+如果不滿意可以按ctrl+z撤銷再來一次</li>
+</ol>
+<h3 id="複製選定選區">複製選定選區</h3>
+<p>終於到了這一步，我們可以用這個方法輕鬆把想要的選區複製出來當鈴聲了</p>
+<ol>
+<li>先按照上面刪除選定選區的第一步驟把需要複製的選區用中括號選出來，接著按<br>
+shift+a 全選選定選區，你會聽到，1個對象選定<br>
+p.s shift+a 是對單軌作用，如果想選定工程內所有軌道的同個區域，那就按<br>
+ctrl+shift+a</li>
+<li>再按<br>
+ctrl+shift+c 複製選定選區，你會聽到，一個對象副本，或是<br>
+ctrl+shift+x 剪下選定選區，你會聽到，一個對象移除<br>
+p.s如果用剪下，剪下選區的前面和後面會變成獨立的對象，也就是兩個對象</li>
+<li>接下來我們就能新建一條軌道，跳到開頭，然後按<br>
+ctrl+v 貼上，之後就能把其他軌道刪掉，渲染成mp3檔或wav檔，這樣鈴聲就做好了<br>
+渲染的方法可以參考快速入門第二篇關於渲染的部分<br>
+如果你有其他用途，當然也可以貼到你想貼的其他軌道上</li>
+</ol>
+<p>p.s 用完選定選區的功能，記得都要按ESC來取消選定選區，否則可能會有超乎意料的狀況。</p>
+<h3 id="分割和膠合">分割和膠合</h3>
+<p>可以把對象切開成兩個獨立的對象，也可以合起來，其實就兩個快速鍵:</p>
+<ul>
+<li>s 將目前編輯光標所在的位置把對象切兩半，變成兩個對象</li>
+<li>ctrl+h 膠合被分割的對象<br>
+p.s 只對被分割的對象有效，且要連續選取被分割的對象按這組快速鍵才有用，連續選取的快速鍵是ctrl+shift+左、右</li>
+</ul>
+<h3 id="單一軌道上的對象混合第一個方法修改工程選項">單一軌道上的對象混合，第一個方法:修改工程選項</h3>
+<p>把多個素材在同一條軌道上進行混音，我個人是較不推薦這種方法，這樣操作的壞處會讓調整音量、pam等等變得更麻煩，<br>
+如果沒有特別的需求或還不熟練的話，我會建議在不同的軌道上放素材，要調媒體出現的時間或畫包絡就找到軌道來操作就好，效果跟在單軌上弄是一樣的，<br>
+如果你是要做廣播劇類似的作品，想要分門別類的把相同的素材放在一個軌道上，例如一條軌道專門放音效，一條軌道放旁白、說話聲等等，用這種方法才會比較合適一些。</p>
+<hr>
+<p>首先，要先調整混合行為，我們可以直接修改工程的選項:</p>
+<ol>
+<li>在reaper上按<br>
+alt+enter 打開工程選項</li>
+<li>tab或shift+tab找索引標籤，往右找<br>
+高級 索引標籤</li>
+<li>別用tab，用shift+tab找<br>
+對象混合行為:  下拉式方塊  已封閉對象替換正在封閉的對象  折疊<br>
+往下找<br>
+對象總是混合<br>
+之後按enter完成設定</li>
+<li>之後只要兩個對象的時間有重覆到，聲音都會混合在一起，<br>
+預設沒有調整混合行為的話，移動的對象會蓋掉其他對象，設成總是混合就不會有這個問題了</li>
+</ol>
+<h3 id="單一軌道上的對象混合第二個方法修改媒體選項">單一軌道上的對象混合，第二個方法:修改媒體選項</h3>
+<p>這個方法僅對有設定的對象有效</p>
+<ol>
+<li>在reaper找到對象所在的軌道</li>
+<li>ctrl+左、右找到要修改的對象後，按<br>
+shift+f2 打開媒體屬性</li>
+<li>tab找<br>
+對象混合行為:  下拉式方塊  工程默認對象混合行為  折疊<br>
+在這用上下找總是混合<br>
+另外，要修改音量就找<br>
+片段音量推子  滑桿  0.00dB<br>
+用上、下增減音量，全部改完按enter即可生效</li>
+</ol>
+<h3 id="快速鍵">快速鍵</h3>
+<ul>
+<li>shift+alt+p 波紋模式切換</li>
+<li>[ 左中括號，標記選定選區的開始點</li>
+<li>] 右中括號，標記選定選區的結束點</li>
+<li>ctrl+shift+a 全選選定選區內的聲音，工程內所有軌道的選區</li>
+<li>shift+a 全選選定選區內的聲音，只選擇目前所在的軌道選區</li>
+<li>ctrl+shift+c 複製選定選區內的聲音</li>
+<li>ctrl+shift+x 剪下選定選區內的聲音</li>
+<li>, 英文逗號，將對象往開頭移動</li>
+<li>. 英文句號，將對象往結尾移動</li>
+<li>小鍵盤加號 來縮小移動間距</li>
+<li>小鍵盤減號 來放大移動間距</li>
+<li>s 分割對象</li>
+<li>ctrl+h 交和對象</li>
+<li>ctrl+v 貼上</li>
+<li>alt+enter 打開工程選項</li>
+<li>shift+f2 打開媒體屬性</li>
+</ul>
+<p>ok此篇到此結束</p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/%E8%81%B2%E9%9F%B3%E8%99%95%E7%90%86%E8%BB%9F%E9%AB%94%E6%9C%83%E7%94%A8%E5%88%B0%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AD%98/" rel="prev">&lt; 聲音工程會用到的小知識</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-1-%E4%B8%8D%E5%90%8C%E7%9A%84%E9%8C%84%E9%9F%B3%E6%A8%A1%E5%BC%8F%E5%92%8C%E9%81%BF%E5%85%8D%E9%81%8E%E8%BC%89%E7%9A%84%E6%96%B9%E6%B3%95/" rel="next">reaper小技巧-1 避免過載的方法和不同的錄音模式 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

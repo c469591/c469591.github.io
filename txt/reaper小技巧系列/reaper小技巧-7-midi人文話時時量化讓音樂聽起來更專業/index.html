@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業 這篇會介紹reap……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-7-midi%E4%BA%BA%E6%96%87%E8%A9%B1%E6%99%82%E6%99%82%E9%87%8F%E5%8C%96%E8%AE%93%E9%9F%B3%E6%A8%82%E8%81%BD%E8%B5%B7%E4%BE%86%E6%9B%B4%E5%B0%88%E6%A5%AD/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:55+08:00",
+        "dateModified": "2022-04-29T11:59:31+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-7-midi%E4%BA%BA%E6%96%87%E8%A9%B1%E6%99%82%E6%99%82%E9%87%8F%E5%8C%96%E8%AE%93%E9%9F%B3%E6%A8%82%E8%81%BD%E8%B5%B7%E4%BE%86%E6%9B%B4%E5%B0%88%E6%A5%AD/",
+        "headline": "reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業",
+        "description": "reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業 這篇會介紹reap……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  2167 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業" />
+<meta property="og:description" content="reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業 這篇會介紹reap……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-7-midi%E4%BA%BA%E6%96%87%E8%A9%B1%E6%99%82%E6%99%82%E9%87%8F%E5%8C%96%E8%AE%93%E9%9F%B3%E6%A8%82%E8%81%BD%E8%B5%B7%E4%BE%86%E6%9B%B4%E5%B0%88%E6%A5%AD/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:55&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T11:59:31&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T11:59:31&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;5&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper小技巧-7-midi人性化時時量化讓音樂聽起來更專業">reaper小技巧-7 midi人性化、時時量化，讓音樂聽起來更專業</h2>
+<p>這篇會介紹reaper裡 midi編輯器裡的人性化，這個功能可以讓電腦根據我們設定的值，模擬出像真人彈奏樂器一定會有的時間偏差，<br>
+以及時時量化，他可以幫助我們在輸入音符後，就進行量化，讓拍子不要跑太偏。</p>
+<h3 id="量化和人性化的使用介紹">量化和人性化的使用介紹</h3>
+<p>midi的人性化功能是我覺得還不錯的reaper自帶功能，以前我用Band-in-a-Box[自動樂隊]，裡面預設就會讓不同的樂器隨機偏差拍點的5%，<br>
+在很多軟體上，一拍還可以分成100等份，也就是0到99%，以此更精確的紀錄音符的位置，<br>
+根據Band-in-a-Box的介紹，專業的樂手，偏差的範圍約略在5%以內，<br>
+以第一小節第二拍的音符來說，5%的偏差就有可能讓一個音符出現在第一拍的95%的位置，或第二拍5%的位置，音符有可能出現在95%到5%的任意一個位置上，<br>
+當我們用reaper將量化強度調到95時，效果就跟將人性化設為5%是一樣的效果，<br>
+如果你是用midi鍵盤彈奏，用midi的量化調到95%，其實就不需要人性化了，因為你在錄音時必定會有偏差，量化95剛好把你的偏差範圍控制在10%內。<br>
+以量化強度來說，量化強度到100會讓聽感明顯覺察出太死板，因為真正的演奏是不可能連1%的偏差都沒有的，<br>
+另外是reaper裡網格的設置，這也是控制量化非常重要的一個參數，<br>
+以4/4拍的網格為例:</p>
+<ul>
+<li>整格<br>
+所有音符只會出現在第一拍的位置</li>
+<li>半格<br>
+所有音符會出現在第一拍或第三拍</li>
+<li>四分網格<br>
+音符會出現在四拍的某一拍上</li>
+<li>八分網格<br>
+音符會出現在每一拍0%的位置或50%的位置</li>
+<li>十六分網格<br>
+音符會出現在每一拍0%、25%、50%75%的位置</li>
+</ul>
+<p>從上所述，當量化強度為100，軟體就會把音符移到最靠近的網格上，<br>
+可以想像一下，當一手華麗的鋼琴伴奏，你設定了整格或半格，量化強度100，那會出現多麼可怕的結果，所有的音都會被集中到一拍或一拍跟三拍上，<br>
+一般設定量化要看整個樂段最小的音符是什麼，例如我彈鋼琴最小的音符是十六分音符，那就設十六分網格，<br>
+但要注意的是，你最小的音符可能對準拍點了，但其他某些音符如果偏得太多，也有可能被拉到最靠近的拍點上，這點要非常注意。<br>
+所以在量化時，什麼時候量化選定的音符，什麼時候量化全部音符，取決於你彈奏的結果，<br>
+文章末尾處會補充選擇音符的相關快速鍵，有需要的可以注意查看。</p>
+<hr>
+<p>另外還有力度的人性化，我覺得力度的隨機偏差對打擊樂用會比較好，<br>
+如果是有音高的樂器，你可能要在不同的樂段做不同的力度量化，以此表現出不同樂段的強弱表情，在搭配人性化，讓每個音的力度不要一模一樣，使整體聽起來更逼真，<br>
+打擊樂就簡單一些，像爵士鼓就可以將量化作用到所有音符，再用人性化作用到所有音符，最後再針對某幾個音特別做力度調整就好了，相對來說比較簡單，<br>
+當然不能什麼歌都這樣調整，還是要不同的歌做不同的處理，這就要靠大家自己變通了，<br>
+最後說說力度的作用方法，<br>
+假若我先全選了所有音符，按ctrl+f2將力度設為80，之後將人性化的力度設為5，<br>
+此時所有的音符力度會在75到85之間隨機浮動，以此類推。</p>
+<h3 id="人性化">人性化</h3>
+<ol>
+<li>在reaper找到midi的軌道，ctrl+左、右選中midi對象，按<br>
+ctrl+e 打開midi編輯器</li>
+<li>按<br>
+h 打開人性化視窗</li>
+<li>tab會看到下面幾個選像
+<ul>
+<li>選中的音符  單選紐  勾選<br>
+在這裡上、下可以控制人性化要作用的區域，有選中的音符跟全部音符可以選</li>
+<li>時間安排:  編輯區<br>
+這裡可以輸入要偏差拍點的值，例如上面說到的5%，那麼就在這裡打5</li>
+<li>時間安排人性化  滑桿  0<br>
+控制的東西跟上一個一樣，只不過這裡是用上、下來調整，你可以選擇在上一個編輯框輸入值，或是在這裡調整滑桿都一樣</li>
+<li>力度:  編輯區<br>
+力度人性化  滑桿  0<br>
+跟上面一樣，一個可以輸入值，一個是拖動滑桿</li>
+<li>時間安排偏差:  編輯區<br>
+時間安排偏差  滑桿  0<br>
+這個參數沒用過，可能是在多軌時控制偏差的時間，大家可以玩看看</li>
+</ul>
+</li>
+</ol>
+<h3 id="時時量化">時時量化</h3>
+<ol>
+<li>在reaper上選擇要時時量化的軌道，按快顯鍵，找<br>
+軌道錄音設置 (輸入量化, 格式, 等等)...  軌<br>
+按enter</li>
+<li>接下來按tab，會看到
+<ul>
+<li>量化軌道 MIDI 錄製  核取方塊  沒勾選<br>
+按空格勾選這個選項</li>
+<li>量化到:  下拉式方塊  折疊編輯區1/8<br>
+在這裡按、上、下可以選擇網格，1/8是八分網格，1/16是十六分網格，而1/8t是八分三連音網格，以此類推</li>
+<li>音符, 位置:  下拉式方塊  最近的值  折疊<br>
+這裡保持預設即可，預設是將音符拖動到最靠近的網格</li>
+<li>量化強度  滑桿  100.0%<br>
+按上、下可以調整量化強度</li>
+<li>而其他的選項<br>
+擺動  滑桿  0.0%<br>
+低端範圍  滑桿  0.0%<br>
+範圍的高端  滑桿  100.0%<br>
+目前還沒測試出實際作用的效果，等待大家自己去探索發現囉</li>
+</ul>
+</li>
+<li>設定完各種參數後按ESC關閉軌道錄音視窗即可</li>
+</ol>
+<p>p.s 在實際測試中，發現時時量化的範圍還包括了鋼琴踏板，所以要是你有硬體踏板，錄音時邊彈編踩踏板的話，<br>
+經過時時量化的處理，踏板很有可能就會被量化拖錯位置，導致踏板位置混亂，<br>
+所以如果用的是硬體踏板，建議還是錄完後在midi編輯器裡做音符量化比較好，<br>
+另外時時量化的作用範圍其實是輸入後，而不是輸入的當下，<br>
+比方說我彈的時候拍子沒對準，我聽到的也是沒對準的，只有在錄完後播放才會聽到有進行量化。</p>
+<h3 id="快速鍵">快速鍵</h3>
+<ul>
+<li>ctrl+e 打開midi編輯器</li>
+<li>shift+左或右 往前或往後連續選擇音符</li>
+<li>shift+a 選擇跟目前音符相同的所有音符</li>
+<li>ctrl+a 全選所有音符</li>
+<li>ctrl+f2 打開是鍵屬性[在音符上按可以調整力度、因高、長度等]</li>
+<li>h 打開人性化設定視窗[midi編輯器裡有效]</li>
+<li>q 量化[midi編輯器裡有效]</li>
+</ul>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-6-%E9%83%A8%E9%80%B2%E8%BC%B8%E5%85%A5-midi%E9%9F%B3%E7%AC%A6%E7%B7%A8%E8%BC%AF/" rel="prev">&lt; reaper小技巧-6 midi步進輸入、音符編輯</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7%E7%B3%BB%E5%88%97/reaper%E5%B0%8F%E6%8A%80%E5%B7%A7-8-%E5%88%86%E8%BB%8C%E6%B8%B2%E6%9F%93rp%E5%A4%9A%E9%96%8B%E9%A6%96%E9%81%B8%E9%A0%85%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%B4%B9/" rel="next">reaper小技巧-8 分軌渲染、多工程切換、rp多開，其他設定 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

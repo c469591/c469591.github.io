@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper快速入門-2 錄音和節拍器 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper快速入門-2 錄音和節拍器 上篇我們說完了設定，這篇就來講該如何進行錄音跟節……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-2-%E9%8C%84%E9%9F%B3%E5%92%8C%E7%AF%80%E6%8B%8D%E5%99%A8/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:55+08:00",
+        "dateModified": "2022-04-29T12:01:02+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-2-%E9%8C%84%E9%9F%B3%E5%92%8C%E7%AF%80%E6%8B%8D%E5%99%A8/",
+        "headline": "reaper快速入門-2 錄音和節拍器",
+        "description": "reaper快速入門-2 錄音和節拍器 上篇我們說完了設定，這篇就來講該如何進行錄音跟節……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  4671 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper快速入門-2 錄音和節拍器" />
+<meta property="og:description" content="reaper快速入門-2 錄音和節拍器 上篇我們說完了設定，這篇就來講該如何進行錄音跟節……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-2-%E9%8C%84%E9%9F%B3%E5%92%8C%E7%AF%80%E6%8B%8D%E5%99%A8/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:55&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T12:01:02&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper快速入門-2 錄音和節拍器</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T12:01:02&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;10&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper快速入門-2-錄音和節拍器">reaper快速入門-2 錄音和節拍器</h2>
+<p>上篇我們說完了設定，這篇就來講該如何進行錄音跟節拍器的控制，準備開始。</p>
+<h3 id="認識工程和軌道">認識工程和軌道</h3>
+<p>簡單來說，每個工程就是一個檔案，在reaper當我們儲存工程時，會產生一個副檔名為rpp的檔，這個檔包括了所有的音軌、拍號、調用的媒體文件等等的資訊，<br>
+每個工程裡必定都會有軌道，他就像記事本裡的每一行，我們在reaper裡按上或下就是在軌道中跳轉，<br>
+而軌道裡可以有很多東西，包括調用進來的媒體文件，例如mp3，或是你錄音進去的聲音，或純粹只在軌道上掛上不同的效果器，或你在midi鍵盤上彈奏的midi事件，<br>
+也就是上面說的，他就像記事本的每一行，就看你想在裡面寫什麼，他就會呈現出你想要的模樣，<br>
+你可以建立很多軌道，第一軌打鼓、第二軌彈bass、第三軌唱歌，錄製完按空格，三條軌道就會一起播放，<br>
+你也可以任意讓某條軌靜音，或讓某條軌獨奏，盡情發揮，就是這麼簡單。<br>
+這裡還有我錄製的演示影片，你可以<br>
+<a href="https://youtu.be/cNDmxo46Avw" target="_blank" rel="noopener">點我收看演示影片</a></p>
+<h3 id="關於工程軌道對象片段這些到底是什麼">關於工程、軌道、對象、片段，這些到底是什麼?</h3>
+<p>上面簡單了解了概念之後，就來更嚴謹的說明工程裡常看到的這些東西，幫助你未來在操作時更有概念。</p>
+<ol>
+<li>工程:<br>
+在台灣，很多音樂人應該都會將工程稱為專案或project，工程只是對岸的翻譯，其實都是同一個東西，<br>
+但為了在學習時更方便，我們就已翻譯包中用的工程來稱呼吧，<br>
+在音樂工作站中，工程是最大的單位，承載了包括軌道、對象、片段等等內容，<br>
+在這裡，我們可以把工程想像成一個大廚房</li>
+<li>軌道:<br>
+軌道用來裝各種媒體對象，包括很多影片格是、音訊格式、midi對象等等，<br>
+在此，我們把軌道想像成一張大長桌</li>
+<li>對象:<br>
+只要是媒體格式，包括影片、音樂檔，丟進reaper裡，就等同一個對象，<br>
+在reaper裡錄音、製作midi，最開始的單位也是一個對象，<br>
+在此，我們把對象想像成一個大碗</li>
+<li>片段:<br>
+片段是裝在對象裡的，<br>
+包括音訊、影片、midi，都是存在對象裡的一個片段，<br>
+另外，一個對象可以放好幾個片段，<br>
+在此，我們把片段想像成大碗裡的白米飯，<br>
+當一個對象裡有很多片段時，就像大碗裡有白米飯、油飯、雞腿等等，<br>
+但要注意的是，一次只能有一個片段在最上面，也就是在一個時間內，只能播放一個片段，<br>
+如果a片段有3分鐘長，b片段只有1分鐘長，那a片段多出來的2分鐘會被裝在另一個對象裡，<br>
+在此，片段想像成各種類型的食物</li>
+<li>fx效果<br>
+效果氣就像各種調味料，<br>
+我們可以將效果器放在軌道上，也就像是桌上的所有食物被加了料一樣，<br>
+也可以將效果器放在對象上，就像只在某個碗裡加料一樣，<br>
+在未來當你掌握了更高深的技術，你還能控制在軌道的那些地方料要加多，那些地方料要加少。</li>
+</ol>
+<hr>
+<h3 id="播放光標和編輯光標">播放光標和編輯光標</h3>
+<p>上面認識了reaper裡的廚房、桌子、碗和實務的概念後，就來認識另一個也非常重要的光標概念吧。<br>
+嚴格來講，光標也是對岸的翻譯，台灣應該叫游標，但為了方便還是用光標來稱呼。</p>
+<ol>
+<li>從左至右<br>
+在reaper裡，最左邊是最開頭的點，最右邊是結束的點，<br>
+每次播放時，都會從左至右來播放。</li>
+<li>編輯光標<br>
+編輯光標就像廚師，當我們要對一個時間點的內容作處理時，就需要移動編輯光標到需要編輯的時間點，<br>
+就像廚師要將一個碗內的食物分裝成兩個碗，必須讓廚師走到碗所在的桌子邊，才能處理碗裡面的食物一樣</li>
+<li>播放光標<br>
+播放光標就像食客，從最左邊的桌子開始吃碗裡的食物，直到吃到最右邊沒食物了才會回到廚師所站的地方</li>
+<li>也就是說，在reaper裡，有兩個光標，一個是用來編輯，一個是在播放時會隨著時間的推移逐漸往右，<br>
+播放光標在播放完才會自動回到編輯光標所在的時間點，<br>
+在播放時，你也可以按<br>
+/<br>
+把編輯光標移動到播放光標的時間點</li>
+</ol>
+<p>ok，相信在上面的描述中，你應該對整個工作站的脈絡有了更深入的了解。</p>
+<h3 id="如何進行標準錄音">如何進行標準錄音</h3>
+<p>會說標準錄音，是因為錄音還有很多種模式，先來介紹標準錄音的方法。</p>
+<h4 id="創建軌道">創建軌道</h4>
+<ol>
+<li>首先要創建一條軌道，打開reaper之後，在reaper主視窗內按<br>
+ctrl+t</li>
+<li>此時會要你輸入軌道名稱，你可以輸入一個你等一下要做的動作，方便之後管理，例如唱歌<br>
+輸入完後enter，再按上或下動一動，就能看到剛才新增的軌道，像這樣<br>
+1 唱歌 0 个对象<br>
+1 是軌道編號，唱歌是軌道名稱，0 个对象是軌道上的錄音、載入的媒體或midi對象等等的數量，<br>
+如果你按照後面的說明進行錄音，你會發現這裡會變成1 個對象，以此類推</li>
+</ol>
+<hr>
+<h4 id="錄音">錄音</h4>
+<ol>
+<li>按上或下選中要錄音的軌道</li>
+<li>按f7，找到<br>
+錄音準備<br>
+告訴reaper這條軌道準備要錄音了</li>
+<li>按f8找到<br>
+正常监听输入<br>
+打開監聽，上一篇的設定沒有問題的話你會在喇叭或耳機內聽到麥克風收到的聲音<br>
+p.s 再按一次f8會聽到监听输入，這個監聽模式會在我們開始錄音之後將監聽關閉</li>
+<li>按一下大鍵盤上的<br>
+w 跳到軌道開頭</li>
+<li>按大鍵盤上的<br>
+r 開始錄音</li>
+<li>錄音完成後再按一次<br>
+r 來結束錄音</li>
+<li>想重新錄製，不想保留之前的錄音那就按<br>
+ctrl+z 來撤銷</li>
+<li>接下來按照第四步驟操作，就能重新錄音</li>
+<li>錄音完成記得按f7將其切換為取消錄音準備，</li>
+<li>要播放一樣按w跳到開頭，按空格播放，再按一次空格停止<br>
+ok 這樣我們就學會錄音了，超簡單</li>
+</ol>
+<p>p.s 如果你錄了好幾次音，但沒按ctrl+z撤銷，那這些錄音可是會一直存在軌道的對象上，成為好多個片段，占用硬碟空間的。<br>
+另外如果你錄了很多軌，可以善用f5靜音跟f6獨奏的功能，<br>
+如果要讓兩個聲音重疊，可以將兩個對象放在不同的軌道上，當對象所在的時間有蟲和時，就會一起被播放。</p>
+<h3 id="軌道和對象的基本操作">軌道和對象的基本操作</h3>
+<p>之前有說過軌道上的對象有很多種類型，例如插入的媒體、midi對象、錄音之後的聲音檔等等，<br>
+如果在軌道上同樣的位置，又重複進行錄音，那這些聲音就會被納入同一個對象裡，我們稱之為片段，<br>
+同一時間只能播放一個片段，其他的片段不會消失，只是不做聲，隨時可以切換過去使其發出聲音，<br>
+要注意的是，如果在軌道上同個位置插入多個媒體，會優先播放第一個插入的媒體，<br>
+如果後面插入的媒體時間比第一個長，才會在第一個媒體播放完後跳到後面插入的媒體播放，<br>
+再來說說快速鍵。</p>
+<ul>
+<li>上或下 當你移動到某個軌道時，也就是選中了這條軌道</li>
+<li>ctrl+c 複製選中的軌道</li>
+<li>ctrl+v 貼上複製的軌道</li>
+<li>刪除鍵 刪除軌道</li>
+<li>空格鍵 以選中的對象進行播放</li>
+</ul>
+<p>以下是軌道上操作對象和片段的快速鍵，你需要先選中軌道，在選擇對象。</p>
+<ul>
+<li>ctrl+左 選擇軌道上左邊一個對象</li>
+<li>ctrl+右 選擇軌道上右邊一個對象</li>
+<li>刪除鍵 選中對象後按刪除鍵是刪除對象，如果沒選對象就按刪除是會刪除整條軌道的，這點要注意</li>
+<li>t 跳到所選對象的下一個片段</li>
+<li>shift+t 跳到所選對象的上一個片段</li>
+</ul>
+<h3 id="如何將錄音的作品匯出成mp3或wav或其他音訊檔">如何將錄音的作品匯出成mp3或wav或其他音訊檔</h3>
+<p>在目前的翻譯中，匯出成檔案的功能叫做渲染，我覺得這種翻譯實在很神奇，對錯先不論，只要知道他是幹什麼的就好，以下說明步驟。</p>
+<ol>
+<li>在reaper的主視窗按<br>
+ctrl+alt+r<br>
+或是按alt，之後往下找渲染，按enter</li>
+<li>此時就打開了渲染的視窗，預設會停在編輯框上，在這邊輸入要儲存的檔名</li>
+<li>按shift+tab找到<br>
+格式:下拉式方塊WAV折疊<br>
+在這裡按上或下可選要儲存的音訊格式</li>
+<li>如果你要存wav檔，打一個w，就能看到wav了，直接enter就會開始轉換成wav檔，並儲存到上篇文章我們設定好的渲染資料夾內</li>
+<li>如果你在上個步驟選mp3，在選擇好後按tab可以找到<br>
+下拉式方塊  xxx kbps  折疊<br>
+在這上下可以選擇你要的kbps，簡單來說320音質在mp3內最好，檔案也最大，<br>
+kbps越小那音質越差，檔案也越小，選好直接enter就開始儲存了</li>
+<li>好，不管你存什麼檔，如果存好了你按tab會看到關閉跟返回，如果還在存，你會聽到取消，<br>
+這樣就完成囉，可以分享你的大作給朋友了</li>
+</ol>
+<h3 id="如何設定拍速拍號">如何設定拍速、拍號</h3>
+<p>預設工程的拍速為120BPM，拍號為4/4拍，<br>
+打開節拍器的快速鍵為ctrl+shift+m，再按一次為關閉，只有在播放的時候才會發出聲音，<br>
+想調整的話，按照以下步驟</p>
+<ol>
+<li>在reaper視窗上按<br>
+alt+enter 打開工程設置</li>
+<li>tab找到<br>
+工程BPM:  編輯區 120.000，<br>
+在這裡輸入數字修改你想要的拍速</li>
+<li>在按tab會依序看到<br>
+拍號  編輯區 4，已選取<br>
+/  編輯區 4，<br>
+在編輯框內輸入你想要的拍號，如果不動就直接enter完成設定</li>
+<li>回到reaper主視窗後，節拍器設定為開啟的狀態下，按空格播放，節拍器就會跟著響起囉</li>
+<li>還有另一種更直覺的方式<br>
+alt+= bpm+1<br>
+alt+- bpm-1<br>
+這邊的=(等於)和-(減號)在倒退鍵的左邊兩顆</li>
+</ol>
+<h3 id="用鍵盤敲節拍">用鍵盤敲節拍</h3>
+<p>要設定拍速還有另一個方法，只要在reaper主視窗按四下h，就能依照你按的速度來設定拍速了，不妨去玩看看。</p>
+<h3 id="如何設定預備拍">如何設定預備拍</h3>
+<p>常覺得按r之後，手來不及回到midi鍵盤上，或還沒抓穩麥克風，那你就需要打開預備拍，<br>
+讓reaper在一個小節之後才啟動錄音，你就可以好好深呼吸一下準備開始，這是十分實用的功能。</p>
+<ol>
+<li>在reaper主視窗上按<br>
+shift+alt+m<br>
+就能打開 節拍器和預播設置  的視窗</li>
+<li>tab找<br>
+錄音前的計數  核取方塊 <br>
+按nvda+除號，使用模擬滑鼠的功能將滑鼠移過去，然後除號單擊，就能將其勾選</li>
+<li>tab一次，會看到<br>
+計數小節:  編輯區2，已選取<br>
+意思就是會有兩個小節，拍號為4/4拍的狀況下，也就是八拍，之後才會開啟錄音，在這八拍內無論你如何對著麥克風嘶吼都不會錄進去，<br>
+如果你有修改拍號，那就是你所設定的每小節拍數而定，速度也是取決於前面你對拍速的設定，<br>
+我自己是設1小節就很夠，你也可以跟我一樣把這邊的數字改成1，</li>
+<li>改好數字後，按ESC關閉這個是窗就ok了，不須點確定</li>
+</ol>
+<h3 id="如何更改標尺的時間單位">如何更改標尺的時間單位</h3>
+<p>對於許多人來說，用小節的方式來顯示可能會不太直覺，如果你想改為用分秒的方式來查看軌道，你可以按照下面步驟設定，<br>
+如果遇到更改後沒有立即生效或顯示方式有點異常的狀況，直接重開reaper即可。</p>
+<ol>
+<li>在reaper的主視窗上按alt，往右找<br>
+查看(V)  子功能表  Alt+v</li>
+<li>往下找<br>
+標尺的時間單位  子功能表</li>
+<li>往右，就能看到<br>
+分:秒<br>
+在這按enter，完成設定</li>
+<li>如果要調整回小節的顯示方式，一樣按照上面的步驟來，在展開標尺的時間單位後，往下找<br>
+小節.節拍 <br>
+按enter，設定就回來囉</li>
+<li>要查看設定的結果，只要在主視窗上按w或page up、page down動一動，就會聽到小節或時間的提示了<br>
+ok 完成囉。</li>
+<li>最後，不知道osara何時新增的功能，在標尺為節拍的情況下，<br>
+快速的按兩次<br>
+ctrl+shift+j 可以看編輯光標的所在時間</li>
+</ol>
+<hr>
+<h3 id="快速鍵">快速鍵</h3>
+<p>想要在軌道上快速跳轉到想要的地方，可以透過快速鍵來跳轉，順便把上面說過的快速鍵也整理一下放在這裡，提供查閱。</p>
+<ul>
+<li>page up 上一個小節</li>
+<li>page down 下一個小節</li>
+<li>ctrl+page up 上一拍</li>
+<li>ctrl+page down 下一拍</li>
+<li>左和右方向鍵 調整編輯光標位置<br>
+p.s 每一拍都有0%到99%的位置，可以讓我們更精準地找到想要的地方</li>
+<li>小鍵盤數字模式下的加號 提高像素，讓左右移動時兼具更短</li>
+<li>小鍵盤數字模式下的減號 降低像素，讓左右移動時間距更大</li>
+<li>ctrl+j 快速跳到想去的小節<br>
+p.s 預設是1.1.00，也就是第一小節、第一拍0%的位置，你可以修改編輯框裡的數值按enter直接跳過去，<br>
+如果要跳到指定時間，就把.改成:，例如1:20，就是一分二十秒，要精細一點也可以改成像這樣1:20.15之類的</li>
+<li>ctrl+shift+j 查看目前編輯光標所停留的位置，善用這個快速鍵，你可以知道你現在有沒有停在你想要的位置上</li>
+<li>alt+enter 打開工程設置，設定拍速或拍號</li>
+<li>ctrl+shift+m 開關節拍器</li>
+<li>shift+alt+m 打開節拍器設定視窗</li>
+<li>w 將編輯光標移動到軌道開頭</li>
+<li>r 開始或結束錄音</li>
+<li>空格鍵 播放或停止播放</li>
+<li>上或下 當你移動到某個軌道時，也就是選中了這條軌道</li>
+<li>ctrl+c 複製選中的軌道</li>
+<li>ctrl+v 貼上複製的軌道</li>
+<li>刪除鍵 刪除軌道</li>
+<li>ctrl+左 選擇軌道上左邊一個對象</li>
+<li>ctrl+右 選擇軌道上右邊一個對象</li>
+<li>刪除鍵 選中對象後按刪除鍵是刪除對象，如果沒選對象就按刪除是會刪除整條軌道的，這點要注意</li>
+<li>t 跳到所選對象的下一個片段</li>
+<li>shift+t 跳到所選對象的上一個片段</li>
+<li>斜線 將編輯光標移動到播放光標所在的位置</li>
+<li>alt+= bpm+1</li>
+<li>alt+- bpm-1</li>
+<li>快速的按兩次 ctrl+shift+j 報讀編輯光標所在時間</li>
+<li>f12 打開快速鍵說明模式<br>
+p.s 打開了說明模式之後，你可以隨意的按鍵盤上的任意按鍵，他會告訴你按下的按鍵是什麼功能，可以幫助初學者找出忘記的快速鍵</li>
+</ul>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-1-%E5%AE%89%E8%A3%9D%E8%88%87%E4%B8%AD%E6%96%87%E5%8C%96%E5%8F%8A%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/" rel="prev">&lt; reaper快速入門-1 安裝與中文化及初期設定</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-3-%E9%9F%B3%E9%87%8F%E5%8D%87%E9%99%8D%E8%AA%BF%E9%80%9F%E5%BA%A6%E5%90%91%E4%BD%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%8F%92%E5%85%A5%E5%AA%92%E9%AB%94%E6%96%87%E4%BB%B6/" rel="next">reaper快速入門-3 音量、升降調、速度、向位的使用以及插入媒體文件 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

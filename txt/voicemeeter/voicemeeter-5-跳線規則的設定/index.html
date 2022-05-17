@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>voicemeeter-5 跳線規則的設定 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="voicemeeter-5 跳線規則的設定 此篇將說明如何修改voicemeeter的設定檔，以達到我們自訂的跳……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/voicemeeter/voicemeeter-5-%E8%B7%B3%E7%B7%9A%E8%A6%8F%E5%89%87%E7%9A%84%E8%A8%AD%E5%AE%9A/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-28T15:24:03+08:00",
+        "dateModified": "2022-04-29T12:11:50+08:00",
+        "url": "http://lamb.tw/txt/voicemeeter/voicemeeter-5-%E8%B7%B3%E7%B7%9A%E8%A6%8F%E5%89%87%E7%9A%84%E8%A8%AD%E5%AE%9A/",
+        "headline": "voicemeeter-5 跳線規則的設定",
+        "description": "voicemeeter-5 跳線規則的設定 此篇將說明如何修改voicemeeter的設定檔，以達到我們自訂的跳……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  2682 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="voicemeeter-5 跳線規則的設定" />
+<meta property="og:description" content="voicemeeter-5 跳線規則的設定 此篇將說明如何修改voicemeeter的設定檔，以達到我們自訂的跳……" />
+<meta property="og:url" content="http://lamb.tw/txt/voicemeeter/voicemeeter-5-%E8%B7%B3%E7%B7%9A%E8%A6%8F%E5%89%87%E7%9A%84%E8%A8%AD%E5%AE%9A/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-28T15:24:03&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T12:11:50&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">voicemeeter-5 跳線規則的設定</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T12:11:50&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;6&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="voicemeeter-5-跳線規則的設定">voicemeeter-5 跳線規則的設定</h2>
+<p>此篇將說明如何修改voicemeeter的設定檔，以達到我們自訂的跳線規則。</p>
+<h3 id="設定檔內控制跳線規則的參數解析">設定檔內控制跳線規則的參數解析</h3>
+<p>根據上篇的設定，假設我將h1和a1都設定到我roland的輸入與輸出，h1對應roland的麥克風輸入，a1對應roland的耳機輸出</p>
+<ol>
+<li>找到我們剛剛除存的設定檔，在上面按快顯鍵，找<br>
+編輯 按enter，此時會以記事本開啟這個檔案</li>
+<li>按ctrl+f，在搜尋框內輸入<br>
+strip<br>
+按enter，之後按ESC關閉搜尋框</li>
+<li>往下大約六行找到這兩行<br>
+<!-- raw HTML omitted --><br>
+&lt;Strip index='1' paneltype='1' 3DPanelx='0.000' 3DPanely='0.000' ColorPanelx='0.000' ColorPanely='0.000' ModPanelx='0.000' ModPanely='0.000' audibility_c='0.00' audibility_g='0.00' /&gt;<br>
+第一行是h1的各種設定，第二行則不用理會，在設定檔的排列順序會像這樣:<br>
+h1 的設定參數<br>
+h1 不用理會的一行<br>
+h2 的設定參數<br>
+h2 不用理會的一行<br>
+h3<br>
+h3<br>
+v1<br>
+v1<br>
+v2<br>
+v2<br>
+辨別是第幾個端口的方法就看Strip index='x'<br>
+x裡的數字會有1、2、3、4、5，分別對應到h1、h2、h3、v1、v2，<br>
+也就是說當我們看到Strip index='4'時，代表這是v1的設定，<br>
+而我們要修改的只有包含mute開頭的這五行。<br>
+拿h1的這行為例，我們要注意的內容有這些<br>
+busa='1' busa2='0' busa3='0' busb='1' busb2='0'<br>
+其中的busa、busa2、busa3、busb、busb2，分別對應的是a1、a2、a3、b1和b2<br>
+而'[單引號]裡面包夾的數字，1代表開啟，0代表關閉，</li>
+<li>以我的設定檔為例，剛存檔的內容會長這樣<br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --><br>
+如果我們只設定了h1跟a1的硬體設備，軟體就會自動把跳線規則裡的a1跟b1通通打開，但要注意這樣的跳線規則是不實用的。</li>
+</ol>
+<hr>
+<p>根據上面這幾行的設定，他的跳線流程會是這樣</p>
+<ul>
+<li>麥克風訊號輸入→voicemeeter的h1端口，此時訊號進入voicemeeter軟體內，開始跳線過程，</li>
+<li>h1的a1和b1為開啟狀態，此時會有兩個動作，<br>
+h1開啟a1:<br>
+麥克風訊號→a1(a1 = roland的耳機輸出)，此時就能從耳機聽到麥克風的聲音<br>
+h1開啟b1<br>
+麥克風訊號→b1(b1 = 系統的聲音的錄音標籤頁下的voicemeeter output)，此時其他軟體可以將麥克風調成voicemeeter output來收到來自h1端口的訊號</li>
+<li>h2、h3和a2、a3，因為我們沒有設定對應的硬體裝置，所以沒有作用，</li>
+<li>v1的a1和b1為開啟狀態，會有兩個動作，<br>
+v1開啟a1:<br>
+a1的聲音從voicemeeter發送出去→系統上的聲音裡的播放標籤頁下的voicemeeter input，</li>
+<li>v1開啟b1:<br>
+播放裝置下的voicemeeter input將訊號發送→錄音標籤頁下的voicemeeter output，<br>
+此時如果將播放器的輸出設為voicemeeter input，不僅我們可以聽到聲音，還會把播放器的聲音發送給b1，也就是voicemeeter output<br>
+會聽到聲音是因為v1開啟了a1，會發送到b1是因為v1開啟了b1</li>
+</ul>
+<h3 id="重點提醒">重點提醒</h3>
+<p>以上面的演示，將重點畫出來給大家參考</p>
+<ol>
+<li>b1，也就是系統錄音裝置下的voicemeeter output，接收到的麥克風訊號是來自h1而不是v1<br>
+v1雖然開啟了a1，但只是讓我們能聽到a1的聲音，並不是透過v1將訊號轉發給b1</li>
+<li>a1、a2、a3扮演的是監聽的角色，當你不需要監聽可以不發送任何訊號到a，只要確定有把訊號發到b，就能用其他軟體聽到輸出到v1的聲音<br>
+但如果v1沒有開啟a1，而其他軟體卻將聲音輸出到voicemeeter input上，那是聽不到任何聲音的</li>
+<li>在沒有宿主做處理時，當你想監聽麥克風的聲音時，將h1的a1開啟</li>
+<li>當你把其他軟體的聲音輸出到v1時，又不想聽到麥克風的聲音，可以只開v1的a1，h1的a1不要開</li>
+<li>你可以在voicemeeter軟體內設定a端口對應的硬體裝置，透過修改設定檔、將設定檔載入voicemeeter來實現多裝置同時輸出相同的聲音訊號<br>
+不過傳送與接收需要避免回溯的情況，之後的文章會再做進一步的說明</li>
+</ol>
+<h3 id="硬體裝置對voicemeeter的輸入改用asio">硬體裝置對voicemeeter的輸入改用ASIO</h3>
+<p>在上一篇我們設定硬體裝置時，h1的裝置選擇清單裡並沒有ASIO可以選，這不是軟體不支援，而是開發者將這個設定移動到其他地方，如果要用軟體設定會很繁瑣，<br>
+如果你使用的卡支援ASIO那a1可以設定，h1當然也可以，不過要透過修改設定檔來控制。</p>
+<ol>
+<li>找到設定檔，按快顯鍵找編輯，按enter</li>
+<li>ctrl+f打開搜尋框，在裡面輸入<br>
+output<br>
+按enter，再按ESC關閉搜尋框</li>
+<li>找到這一行<br>
+<!-- raw HTML omitted --><br>
+p.s name後面有一串看起來像亂碼的英文加數字，這是裝置的ASIO ID，每個裝置都不一樣
+<ul>
+<li>要注意的是後面這裡:<br>
+patch1='1' patch2='2' patch3='3' patch4='4' patch5='5' patch6='6'  /&gt;<br>
+其中patch1、patch2是h1裝置的ASIO左右聲道，<br>
+'(單引號)裡包夾的是硬體裝置的通道序號，<br>
+拿我用的roland rubix44為例，這是一張四進四出的卡，卡上有四個卡農插座可以接麥克風，粗略判定這張卡就有四個通道，<br>
+而這張卡從左至右剛好對應通道一到四，並且有做立體聲的設計，從左至右為<br>
+1左、2右、3左、4右，也就是能輸入兩個立體聲，<br>
+p.s 因此可以得知，如果你的卡有18個通道，那就可以輸入1到18任意通道，如果只有2個通道，那就只能輸入1跟2</li>
+<li>所以如果我只接一支麥克風在最左邊的卡農座上，把訊號送到a1，我只會從左邊耳機聽到聲音，除非我再接一支麥克風到2的卡農座上，這樣才能構成立體聲，讓兩邊耳機都有聲音，<br>
+但我可能覺得麻煩，或只有一支麥克風，此時我可以將patch1和patch2改成這樣<br>
+patch1='1' patch2='1'<br>
+將左右聲道都改成用1通道來輸入，這樣兩邊耳機都有聲音了，如此稱為單聲道輸入，<br>
+當然你也可以將左右邊都改成2、3、4，但相應的也必須把麥克風插在通道對應的插座上<br>
+p.s 關於單聲道、立體聲，如果不了解，你可以<br>
+<a href="https://www.nvda.org.tw/teaching/record/ui=2004060140tm=1966659071" target="_blank" rel="noopener">點我參考聲音處理軟體會用到的小知識</a></li>
+</ul>
+</li>
+<li>如果你有用reaper接管voicemeeter的聲音訊號，你也可以設patch1'1'、patch2'2'，<br>
+接著用reaper以單聲道輸入，兩邊耳機也會有聲音</li>
+<li>後面的patch3、4、5、6則對應到h2、h3的左右聲道，</li>
+</ol>
+<h3 id="將設定檔載入到voicemeeter">將設定檔載入到voicemeeter</h3>
+<p>在設定完跳線規則後，只要把設定檔載入到voicemeeter軟體，軟體就會按照我們設定的參數運作了，<br>
+要注意的是，設定檔一載入就會立刻生效，不須重啟系統或voicemeeter</p>
+<ol>
+<li>打開voicemeeter banana，不要開成voicemeeter了，兩個版本步一樣<br>
+如果忘記voicemeeter banana怎麼開，可以<br>
+<a href="https://www.nvda.org.tw/teaching/record/ui=2004060140tm=1966618207" target="_blank" rel="noopener">點我參考上一篇</a></li>
+<li>在voicemeeter視窗內按<br>
+win+alt+j 讓落寞ocr來進行辨識，<br>
+如果辨識出的條目不是135條左右，按照上一篇的步驟來切到騰訊文字再辨識一次</li>
+<li>按<br>
+win+alt+上或下 找<br>
+Menu<br>
+按九宮格除號</li>
+<li>在彈出的清單內找<br>
+Load Settings...<br>
+按enter，並找到剛剛修改好的設定檔enter載入</li>
+<li>載入後立刻生效，可以打開相關軟體測試看看</li>
+</ol>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/voicemeeter/voicemeeter-4-%E8%A8%AD%E5%AE%9A%E7%A1%AC%E9%AB%94%E8%A3%9D%E7%BD%AE/" rel="prev">&lt; voicemeeter-4 設定硬體裝置和跳線設定</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/voicemeeter/voicemeeter-6-%E7%94%A8reaper%E6%8E%9B%E6%95%88%E6%9E%9C%E5%AF%A6%E6%88%B0/" rel="next">voicemeeter-6 用reaper掛效果實戰 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

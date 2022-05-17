@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>txt的簡繁體轉換和簡體程式亂碼的解決方案 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="txt的簡繁體轉換和簡體程式亂碼的解決方案 以下將對純文字的簡繁體字轉換，以及非繁體中……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/%E5%85%B6%E4%BB%96%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/%E6%AA%A2%E8%BD%89%E5%87%A1/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-28T15:24:03+08:00",
+        "dateModified": "2022-04-29T12:16:14+08:00",
+        "url": "http://lamb.tw/txt/%E5%85%B6%E4%BB%96%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/%E6%AA%A2%E8%BD%89%E5%87%A1/",
+        "headline": "txt的簡繁體轉換和簡體程式亂碼的解決方案",
+        "description": "txt的簡繁體轉換和簡體程式亂碼的解決方案 以下將對純文字的簡繁體字轉換，以及非繁體中……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3493 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="txt的簡繁體轉換和簡體程式亂碼的解決方案" />
+<meta property="og:description" content="txt的簡繁體轉換和簡體程式亂碼的解決方案 以下將對純文字的簡繁體字轉換，以及非繁體中……" />
+<meta property="og:url" content="http://lamb.tw/txt/%E5%85%B6%E4%BB%96%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/%E6%AA%A2%E8%BD%89%E5%87%A1/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-28T15:24:03&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T12:16:14&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">txt的簡繁體轉換和簡體程式亂碼的解決方案</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T12:16:14&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="txt的簡繁體轉換和簡體程式亂碼的解決方案">txt的簡繁體轉換和簡體程式亂碼的解決方案</h2>
+<p>以下將對純文字的簡繁體字轉換，以及非繁體中文程式顯示亂碼的問題，做個別的解決方法說明，<br>
+不過在開始前，你需要先搞清楚一些基礎的知識，讓我先來介紹一下關於文字編碼的部分</p>
+<hr>
+<h4 id="文字編碼">文字編碼</h4>
+<p>說真的，真要從頭說起的話會浪費很多時間，估計你也不想聽，那我就擷取一些重點就好，<br>
+拿簡體字跟繁體字來說，你只要記得這四種和它的特性就好</p>
+<ul>
+<li>[big5]，這是繁體字的編碼格式，在不是繁體的系統上會變成亂碼</li>
+<li>[Unicode繁體]，這也是繁體字的編碼格式，在不是繁體的系統上也能正常顯示</li>
+<li>[gbk]，這是簡體字的編碼格式，在不是簡體的系統上會變成亂碼，這種編碼就是為什麼我們要使用convertv的原因</li>
+<li>[Unicode簡體]，這也是簡體字的編碼格式，不過它在不是簡體的系統上可以正常顯示</li>
+</ul>
+<p>認識了這四種編碼，我們就知道只要是[Unicode]的編碼，不管簡體或繁體，nvda都是能正常閱讀的，<br>
+而gbk，就是我們看起來像天書的簡體字，我們就必須用convertv來把這種編碼的簡體直接轉為繁體，<br>
+當然Unicode簡體一樣能轉成Unicode繁體，不過通常用nvda的使用者不會注意到自己所閱讀的文字是Unicode簡體或繁體，<br>
+除非你在那個字上按兩下九宮格2，nvda才會朗讀這是簡體字，記得九宮格不要開成數字模式，<br>
+你可以拿這個字來做一下實驗，這是簡體的[体]，跟繁體的[體]，<br>
+根據上面的說明，如果今天你使用的是簡體系統，反而是big5編碼的繁體字會變成亂碼喔<br>
+這也是為什麼Unicode會比較好用的原因，到哪裡都吃得開，<br>
+所以保存網頁上的文字建議大家都把編碼調成utf8，這樣如果文字裡有簡體，下次打開時就不會有的字變成問號囉</p>
+<hr>
+<h4 id="convertz802-純文字簡繁體轉換工具">convertz(8.02) 純文字簡繁體轉換工具</h4>
+<p><a href="http://download.gaga.tw/file/convertz(8.02)(%E7%B4%94%E6%96%87%E5%AD%97%E7%B0%A1%E7%B9%81%E9%AB%94%E8%BD%89%E6%8F%9B%E5%B7%A5%E5%85%B7).rar" target="_blank" rel="noopener">點我下載convertz8.02</a><br>
+這是一個很強大的軟體，除了能將txt裡的簡體字轉成繁體，還有一次批量轉換多個檔案的功能，<br>
+以及批量轉換檔名、資料夾名、檔案標籤的功能，十分好用，<br>
+你需要先將下載好的convertv解壓縮，再從解壓後的資料夾內找到ConvertZ.exe並按enter打開，<br>
+一開始是不會有軟體介面跑出來的，他會跑到通知區域，而我們需要對通知區域裡的convertv做不同的操作，<br>
+以下用五級標題來說明不同功能的使用步驟，</p>
+<hr>
+<h5 id="剪貼版的簡繁體轉換">剪貼版的簡繁體轉換</h5>
+<ol>
+<li>先複製好你要轉換的文字</li>
+<li>之後打開convertv.exe，在桌面上按tab跳到通知區域，並按左、右方向鍵找到convertv，</li>
+<li>之後按快顯鍵，打開convertv的功能表</li>
+<li>按上、下方向鍵選擇<br>
+剪貼簿：GBK &gt; Big5<br>
+或<br>
+剪貼簿：Unicode　簡 &gt; 繁<br>
+按enter</li>
+<li>成功就會跳出一個對話框，直接enter關閉對話框，<br>
+這時你在把文字貼回txt檔，你會發現已經可以閱讀了，</li>
+<li>如果你有專心閱讀上面的說明，你應該會知道你要選什麼，<br>
+完全看不懂的就選gbk，看的懂，但是都是簡體字就選[剪貼簿：Unicode　簡 &gt; 繁]</li>
+</ol>
+<hr>
+<h5 id="文字檔批量轉換">文字檔批量轉換</h5>
+<ol>
+<li>重複上文第二個步驟</li>
+<li>在功能表內選純文字檔案轉換</li>
+<li>此時就打開了convertv的視窗，按一次tab會聽到[按鈕]，這個按鈕沒有名字，打開會讓你選擇資料夾，<br>
+如果你按過頭了，這個按鈕位於[退出  按鈕]的後一項，直接在這個按鈕上按enter，<br>
+就會彈出選擇資料夾的對話框，這是一個樹狀目錄，<br>
+你可以先按幾次左方向鍵把所有的目錄都摺疊起來，再往右慢慢展開你要轉換檔案所在的資料夾，<br>
+找到資料夾按enter，就會回到convertv的視窗，<br>
+你也可以把所有要轉換的檔案放到使用者目錄下的[文件]資料夾裡，這樣就能跳過此步驟</li>
+<li>接著按一次tab會看到一個清單，裡頭就是剛選擇的資料夾裡的所有檔案，<br>
+選擇你要轉換的檔案，按tab找加入按enter，或直接找全部加入按enter加入所有檔案，</li>
+<li>繼續按tab會有很多選項，大部分維持預設就好，<br>
+有一個<br>
+轉換檔案名稱  核取方塊  沒勾選<br>
+如果連檔名都是亂碼，就在這按空格鍵核取，如果沒有就不用勾</li>
+<li>按tab還會看到另一個清單，這是轉換後檔案會存放的目的地，<br>
+在這個清單上shift+tab一次也有個沒名字的按鈕，在上面按enter會彈出選擇資料夾的對話框，<br>
+選擇的方法跟前面一樣</li>
+<li>接著按tab找[開始轉換  按鈕]，按enter<br>
+成功會跳出Information  對話框OK  按鈕，按enter關閉對話框<br>
+如果目的地有相同的檔案還會彈出是否覆蓋的對話框，選yes即可，<br>
+這樣就完成了<br>
+檔案會預設存到使用者目錄下的文件裡，win7叫我的文件</li>
+</ol>
+<hr>
+<h5 id="資料夾名檔名轉換">資料夾名、檔名轉換</h5>
+<ol>
+<li>跟批量轉檔的第一個步驟一樣</li>
+<li>在功能表裡選檔案名稱轉碼</li>
+<li>此時就會打開convertv的視窗，先按tab找樹狀目錄，<br>
+預設應該會是[樹狀檢視 桌面]，操作方法跟上面選擇資料夾一樣，<br>
+我們選到最外層的目錄就好，比方說，我要轉123這個資料夾，裡面有a跟b資料夾，<br>
+就找到123這個資料夾，然後按右方向鍵聽到展開，就表示我要轉123這個資料夾，<br>
+包括123裡面的子資料夾和檔案都要轉</li>
+<li>當然，也可以選擇要轉換的範圍，<br>
+在樹狀目錄上按tab之後會有兩個選項，你可以依照需求來勾選，<br>
+包含母目錄  核取方塊  勾選<br>
+包含子目錄及所有檔案  核取方塊  勾選<br>
+一般情況下，是不用修改這邊的設定的，轉換之前就把檔案都歸納到同一個資料夾下就可以了</li>
+<li>繼續按tab會看到<br>
+GBK  單選鈕  勾選<br>
+Big5  單選鈕  勾選<br>
+如果你的資料夾名跟檔名都是亂碼可以跳過這個步驟，繼續看下一個步驟，<br>
+如果你的資料夾名是能正常顯示的，但是都是簡體字，就在這兩個選項上按上、下方向鍵調成<br>
+Unicode  單選鈕  勾選<br>
+Unicode 繁體  單選鈕  勾選</li>
+<li>最後按tab找 目錄模式   內容頁 開始轉換  按鈕，<br>
+在這按enter就會執行轉換的動作了，好了不會有對話框跳出來，<br>
+如果你覺得開始轉換的按鈕有點難找，你可以按shift+tab，就能直接找到開始轉換的按鈕，而不會聽到[目錄模式 內容頁]<br>
+執行完之後就能直接關閉視窗囉</li>
+</ol>
+<hr>
+<h5 id="小提醒">小提醒</h5>
+<p>在你使用完並跳回桌面，或在convertv的視窗按ctrl+f4關閉之後，程式仍然會長駐在通知區域，<br>
+你需要在回到通知區域，在convertv的圖示上按快顯鍵，從功能表裡選擇[結束]來關閉程式，<br>
+當然，你懶的關也沒關係，它也不會礙到你，在下次登出或重啟電腦後，程式就會被關閉了，<br>
+另外其他比較不常用的功能，就留給各位自己研究囉</p>
+<hr>
+<h4 id="軟體的簡體字亂碼解決方案">軟體的簡體字亂碼解決方案</h4>
+<p>使用方法很簡單，不管win7或win10，我都會推薦使用這一套軟體Locale Emulator<br>
+<a href="https://drive.google.com/open?id=1bGgp2SwK64nbwXlETPGWZFoeiFUtnx7S&amp;authuser=c469591@mail.batol.net&amp;usp=drive_fs" target="_blank" rel="noopener">點我下載Locale Emulator2.4.1.0</a></p>
+<ol>
+<li>解壓縮下載的檔案，並把解壓後的資料夾移動到c槽裡，<br>
+因為這是免安裝的軟體，你如果解壓縮後直接安裝，以後每次使用Locale時，程式就會來這個資料夾裡找檔案讀取，<br>
+而如果你在整理資料時，不小心把Locale的資料夾刪了，Locale便會無法使用，<br>
+所以建議把Locale的資料夾搬到c槽跟目錄，或c槽的Program Files內</li>
+<li>找到Locale Emulator資料夾內的<br>
+LEInstaller.exe，按快顯鍵，選以管理員身分執行</li>
+<li>之後就會打開Locale的安裝視窗，按tab找<br>
+For all users (requires admin)  分组Install for all users<br>
+按enter<br>
+p.s 如果按tab沒反應，可能就要用畫面瀏覽+模擬滑鼠的功能來點上面這個按鈕</li>
+<li>成功就會彈出<br>
+Install finished. Right click any executable and enjoy :)<br>
+按enter關閉視窗，之後把安裝的視窗一起關掉就完成了</li>
+<li>之後只要在簡體的執行檔上按快顯鍵，打l再按enter，就能打開簡體的程式並正常顯示了<br>
+你也可以從快顯鍵的選單裡找Locale Emulator  子功能表，往右展開再按enter，一樣能打開簡體的程式</li>
+</ol>
+<hr>
+<p>在Locale Emulator功能表裡也有一些選項，像是</p>
+<ul>
+<li>以此程式設定執行，這是指針對這個程式做設定，<br>
+如果你針對某程式做了設定，在exe檔案的旁邊還會多出個同名的檔案，不過附檔名不一樣，這是針對此程式的設定紀錄檔</li>
+<li>修改此程式的設定，就是修改紀錄檔裡的設定</li>
+<li>管理通用設定清單，從這裡就可以新增其他的語言到Locale Emulator功能表裡，設定好某個語言就不用每次打開不同程式時都要設定</li>
+</ul>
+<p>至於打開設定之後的視窗後，裡面的內容也很簡單，一般只要選擇好語言按enter就會打開程式了，<br>
+你也可以在[以此程式設定執行]裡找到傳送到桌面，在上面按一次空格鍵，就會傳送該程式捷徑到桌面，<br>
+每次從桌面上打開捷徑都會直接用Locale Emulator來執行。<br>
+另外要補充的一個重點，Locale Emulator只是把無法顯示的文字編碼轉成Unicode來顯示，並不會把程式的字轉成繁體，<br>
+其他語系的程式也是一樣，只會正常顯示但並不會改變本來的內容，這點不要搞錯了，<br>
+當關閉程式後，程式本來是什麼樣子還是什麼樣子，並不會被修改，<br>
+好了，這次的教學到此結束，另外還有一些有趣的文章，<br>
+這篇文章其實就是拿來娛樂的，不過你也可以間接了解一些編碼的奧妙XD<br>
+<a href="http://jimliu.net/2015/03/07/something-about-encoding-extra/" target="_blank" rel="noopener">點我收看編碼歪傳文章</a></p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8F%92%E4%BB%B6/chrome%E7%89%88line/" rel="prev">&lt; chrome上的擴充套件line</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/utorrent/utorrent%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E4%B8%8A/" rel="next">uTorrent 使用攻略 (上) &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

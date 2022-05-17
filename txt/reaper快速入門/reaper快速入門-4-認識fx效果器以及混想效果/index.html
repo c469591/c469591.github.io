@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper快速入門-4 認識FX效果器以及混響效果 | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper快速入門-4 認識FX效果器以及混響效果 前面的文章已經告訴大家如何插入媒體……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-4-%E8%AA%8D%E8%AD%98fx%E6%95%88%E6%9E%9C%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B7%B7%E6%83%B3%E6%95%88%E6%9E%9C/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:55+08:00",
+        "dateModified": "2022-04-29T12:01:29+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-4-%E8%AA%8D%E8%AD%98fx%E6%95%88%E6%9E%9C%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B7%B7%E6%83%B3%E6%95%88%E6%9E%9C/",
+        "headline": "reaper快速入門-4 認識FX效果器以及混響效果",
+        "description": "reaper快速入門-4 認識FX效果器以及混響效果 前面的文章已經告訴大家如何插入媒體……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3097 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper快速入門-4 認識FX效果器以及混響效果" />
+<meta property="og:description" content="reaper快速入門-4 認識FX效果器以及混響效果 前面的文章已經告訴大家如何插入媒體……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-4-%E8%AA%8D%E8%AD%98fx%E6%95%88%E6%9E%9C%E5%99%A8%E4%BB%A5%E5%8F%8A%E6%B7%B7%E6%83%B3%E6%95%88%E6%9E%9C/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:55&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T12:01:29&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper快速入門-4 認識FX效果器以及混響效果</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T12:01:29&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;7&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper快速入門-4-認識fx效果器以及混響效果">reaper快速入門-4 認識FX效果器以及混響效果</h2>
+<p>前面的文章已經告訴大家如何插入媒體、錄音、調音量等等，對於愛唱歌的人來說，還少了一樣重要的元素，那便是混響效果，<br>
+混響是對岸的說法，在台灣比較常聽到的是殘響，英文則是reverb，<br>
+如果你還有點不太了解這是什麼，你可以到廁所吼一聲，對，除了你自己的聲音，經過牆壁反彈回來的聲音那就是reverb，你也可以理解reverb就是聲音的反射，<br>
+在很多音樂中，為了讓唱歌的人聲音更飄渺，或想刻意做出在特定場地才有的聲音，製做者就會在他的聲音上套上reverb的效果，使其不必特別跑到某個地方錄音，只要在錄音室唱完，用軟體模擬就能達到想要的聲音特色，<br>
+而現在很多唱歌的app裡，就內涵了reverb的效果器，平常我們去卡拉ok唱歌時也是reverb，不過為了更能讓唱歌的人聽到自己的聲音，還會加上Delay的效果，<br>
+總而言之，為了讓唱歌的聲音更有空間感，或以此來掩蓋一下唱功的不足，reverb是必不可少的，<br>
+另外我也錄製了混響效果的演示影片，有興趣的可以聽一下，裡面也會有操作步驟的演示<br>
+<a href="https://youtu.be/jYiy8YZ51mc" target="_blank" rel="noopener">點我打開演示影片</a></p>
+<h3 id="認識reaper的fx效果器視窗">認識reaper的FX效果器視窗</h3>
+<p>首先，需要先了解一下reaper上的FX視窗，我以前剛學reaper的時候，這個視窗讓我很難理解，花了不少時間研究，<br>
+簡單來說FX就是效果器的意思，FX效果器視窗裡包含各種項目，包括混響、壓縮器、限制器、噪音消除、kontakt、waves等各種vst插件都會放在這裡，<br>
+kontakt是一種採樣器，他可以用來載入各種樂器的音色，前提是你要先擁有這些音色庫，載入音色後我們就可以用midi鍵盤或虛擬midi鍵盤來彈奏音樂，<br>
+waves是一間做效果器的公司，他們的效果器就包括了各種我們常會用到的效果，例如reverb、限制器等等，且處理的效果比reaper內建的更好，<br>
+而像kontakt或waves這種都是需要額外安裝，安裝完會生成vst檔案，副檔名通常為.dll，<br>
+我們透過reaper的vst功能加載他們，最後透過FX視窗來選擇並啟用指定的效果器，調整不同的效果器參數使其達到我們想要的效果，很多需要額外安裝或有提供dll檔的效果器都是類似的加載方式。<br>
+如果你想更了解vst到底是什麼，你可以<br>
+<a href="https://zh.wikipedia.org/wiki/VST" target="_blank" rel="noopener">點我參考vst的維基百科</a></p>
+<h3 id="如何打開fx視窗以及fx視窗佈局">如何打開FX視窗以及FX視窗佈局</h3>
+<ol>
+<li>在reaper主介面上建立一條軌道，或選中一條已有的軌道</li>
+<li>按f</li>
+<li>此時會彈出名為<br>
+添加 FX到: 軌道 1 &quot;大帥比&quot;<br>
+的視窗，這個就是FX效果器視窗了<br>
+p.s 軌道1是目前我選擇的軌道序號，大帥比是軌道名稱</li>
+<li>打開視窗後預設焦點會停在一個編輯框上，這是用來搜尋效果器名稱的框，</li>
+<li>按四次tab會到樹狀目錄，在目錄裡可以看到所有效果器的分類<br>
+p.s 如果你有在搜尋框輸入文自，樹狀目錄要按一次home鍵到全部插件，這樣才會搜尋所有插件</li>
+<li>再按一次tab，看到一個清單，這是顯示前面你所選中的分類裡所有的效果器</li>
+<li>我們可以先選好分類，從列表裡找到想用的效果器按enter來載入</li>
+<li>此時搜尋框和分類都會消失，只留下一個列表和控制效果器的相關參數</li>
+<li>要將效果器移除，按tab找到列表，上或下選中載入的效果器名稱按刪除鍵</li>
+<li>按ESC將FX視窗關閉，再按f重新打開FX視窗，就能選擇其他的效果器了。</li>
+</ol>
+<p>p.s 要注意的是，如果你沒有把搜尋框清空，當你在樹狀檢視選擇分類時，會影響列表裡的顯示，因為軟體會自動以搜尋框裡的字搜尋所選的分類，再顯示在列表上，<br>
+所以如果你在搜尋框打的字分類裡沒有找到，那列表裡便會留空，所以沒有要使用搜尋時請記得搜尋框不要有任何字符存在。</p>
+<h3 id="在軌道上載入混響reverb效果">在軌道上載入混響[reverb]效果</h3>
+<p>要先說明的是，在reaper裡，效果器不是只能掛在軌道上，只是掛在軌道上如果有很多軌要用相同效果會比較省資源，且更有彈性，<br>
+像是混響，我通常都會掛在一條單獨的軌道上，且這條軌不做任何其他事，<br>
+當我們有十條軌道都需要相同的效果例如混響時，就可以將這十條軌道全部發送到混響軌，這比起在每一條軌道都開啟一個混響效果節省許多資源，也比較方便，要調整混響的參數，也只需要動一軌就可以了，<br>
+不過這是後話了，以後會在另一篇進行說明，這次先直接掛在要錄唱歌的軌道上，比較簡單，<br>
+要提醒各位的是，在玩各種效果器前，你要知道用衰減的方式比用增益的方式效果更好，尤其是eq。</p>
+<ol>
+<li>在reaper主介面上建立一條軌道，開新軌道的快速鍵是ctrl+t</li>
+<li>上下動一動選中這條軌道，按f打開FX視窗</li>
+<li>按tab找樹狀檢視</li>
+<li>上或下找<br>
+Reverb</li>
+<li>tab到清單，找<br>
+VST: ReaVerbate (Cockos)<br>
+按enter<br>
+p.s 這個是安裝reaper時就會自帶的混響效果，也就是內建的</li>
+<li>按shift+tab找<br>
+下拉式方塊  無預設  折疊<br>
+在這裡用上或下可以選擇預置，白話講就是幾個已經調好參數的模板，方便懶人使用<br>
+p.s 按tab找也可以，不過你可能會聽到一大串參數才會聽到，所以還是倒著切比較好認</li>
+<li>tab找<br>
+Wet  滑桿  -3.0<br>
+這裡是調整混響聲音的輸出音量，可以簡稱濕聲，上下可以調整參數，<br>
+再按一次tab是編輯框，你可以在裡面改數字來更精確的控制想要的音量，單位是DB[分貝]</li>
+<li>按tab找<br>
+Dry  滑桿  -3.0<br>
+這裡是調整乾聲的輸出音量，上下可以調整參數，再按一次tab是編輯框，你可以在裡面改數字來更精確的控制想要的音量，單位一樣是DB<br>
+p.s 我們可以透過控制乾濕比例來調整聲音，達到想要的效果，調整的比例建議都用衰減，而不要用增益，<br>
+例如我要讓乾聲比濕聲大5DB，我可以改成像這樣<br>
+乾聲0.0DB，濕聲-5.0DB，而不是<br>
+乾聲2.0DB，濕聲-3DB<br>
+當我們的值超過0.0時，可能就會讓聲音過載，也就是破音、失真，關於這部分以後會在另一篇說明</li>
+<li>按tab看到<br>
+RoomSz  滑桿  50<br>
+在這裡就是調整混響的強度，上下調整參數，再按一次tab的編輯框可以直接輸入想要的參數，最大98最小30，<br>
+滑桿的標題較Room size房間大小，可以這樣理解</li>
+<li>接下來的
+<ul>
+<li>Damp  滑桿  50<br>
+是Dampening阻尼，如果說上面的Room size是放，那這裡就是控制收，這有點抽象，你可以自己玩看看，以下節錄自網上找來的阻尼說明<br>
+Damping 阻尼是一種物理現象，意旨的是在任何的震動系統當中，震動會隨著摩擦或者是阻力等等因速而造成幅度逐漸下降與衰減的特性，藉此來詮釋能量的量化</li>
+<li>還有<br>
+Width  滑桿  1.00<br>
+是Stereo Width立體聲寬度，通常不用改</li>
+<li>以及<br>
+Delay  滑桿  0<br>
+是Initial Delay:初始延遲，這裡是控制混響聲出來的時間，單位是ms毫秒，一秒等於一千毫秒，<br>
+也就是說，如果這邊我改成500，我對麥克風嘶吼一聲，間隔半秒混響聲才會出來，這我通常用不太到，除非特殊用途</li>
+<li>最後的這兩個<br>
+Lowpass  滑桿  20000<br>
+Lowpass高通的意思<br>
+Hipass  滑桿  0<br>
+低通的意思<br>
+這兩個控制項是一組的，單位是Hz，<br>
+以上面預設的參數來說，低通為0，高通為20000，<br>
+這邊就是控制混響聲作用的範圍，而人耳能聽到的頻率範圍約為20Hz到20000Hz，<br>
+不同的空間對於不同頻段的反射也是有所不同的，所以我們可以控制這個參數來模擬在不同環境的混響效果，<br>
+例如我們把他調成500到15000，那我們聽到的聲音除了原有的乾聲外，還會聽到乾聲裡500到15000頻率內的混響，低於500或高於15000的聲音就會消失了</li>
+</ul>
+</li>
+<li>最後總結，其實我們最常用的還是濕聲、乾聲以及房間大小，而其他的參數比較少用到，<br>
+調整好直接按ESC關閉FX視窗就ok了，你也可以打開錄音準備跟監聽，一邊調參數一邊對著麥克風嘶吼，<br>
+達到想要的效果後按r就可以開始錄音囉~</li>
+</ol>
+<h3 id="快速鍵">快速鍵</h3>
+<ul>
+<li>f 打開所選軌道的FX視窗</li>
+</ul>
+<p>ok，認識了FX跟混響，我們就可以高興的開始嘶吼高歌啦!<br>
+接下來的幾篇會邁入midi相關的功能，也會放上幾個自己做的音樂給大家做參考，我也是玩過才知道reaper的midi比我想像中的還厲害，<br>
+最後，這篇到此結束，感謝閱讀。</p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-3-%E9%9F%B3%E9%87%8F%E5%8D%87%E9%99%8D%E8%AA%BF%E9%80%9F%E5%BA%A6%E5%90%91%E4%BD%8D%E7%9A%84%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%8F%92%E5%85%A5%E5%AA%92%E9%AB%94%E6%96%87%E4%BB%B6/" rel="prev">&lt; reaper快速入門-3 音量、升降調、速度、向位的使用以及插入媒體文件</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-5-kontakt%E6%8E%A1%E6%A8%A3%E5%99%A8%E8%88%87%E5%85%A5%E5%BA%AB%E5%B7%A5%E5%85%B7/" rel="next">reaper快速入門-5 kontakt採樣器與入庫工具 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>

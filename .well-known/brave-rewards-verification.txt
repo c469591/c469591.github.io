@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lamb.tw
+Token: 78063339306b862ea266f0118fcce3355ee3eb3d37f45e84650e60fd3ef03aad

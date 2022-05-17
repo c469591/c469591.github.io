@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.92.0" /><meta name="theme-color" content="#16171d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>reaper音頻設備的選擇以及認識ASIO | 小羔羊分享站</title>
+
+    <link rel="stylesheet" href="/css/meme.min.0ee7afa29643658200a3981420238b05951a05d0bf6a3f53700f80a4f94495cc.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.222e58367406527b1b7344bd5682d0822fed69e7fac7a0578eb9902ca1f4966d.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB&#43;Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Noto&#43;Serif&#43;SC:wght@400;500;700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="小羔羊" /><meta name="description" content="reaper音頻設備的選擇以及認識ASIO 這次來分享一下關於reaper設定的技巧，……" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="小羔羊分享站" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="小羔羊分享站" />
+    <meta name="msapplication-starturl" content="../../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E9%9F%B3%E9%A0%BB%E8%A8%AD%E5%AE%9A%E8%B7%9Fasio%E4%BB%8B%E7%B4%B9/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-08-21T17:44:55+08:00",
+        "dateModified": "2022-04-29T12:02:47+08:00",
+        "url": "http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E9%9F%B3%E9%A0%BB%E8%A8%AD%E5%AE%9A%E8%B7%9Fasio%E4%BB%8B%E7%B4%B9/",
+        "headline": "reaper音頻設備的選擇以及認識ASIO",
+        "description": "reaper音頻設備的選擇以及認識ASIO 這次來分享一下關於reaper設定的技巧，……",
+        "inLanguage" : "zh-TW",
+        "articleSection": "txt",
+        "wordCount":  3555 ,
+        "image": "http://lamb.tw/icons/lamb.jpg",
+        "author": {
+            "@type": "Person",
+            "description": "生命有極限，但研究新事物的精神沒有極限",
+            "email": "c469591@mail.batol.net",
+            "url": "https://lamb.tw",
+            "name": "小羔羊"
+        },
+        "license": "文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾",
+        "publisher": {
+            "@type": "Organization",
+            "name": "小羔羊分享站",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://lamb.tw/icons/lamb.jpg"
+            },
+            "url": "http://lamb.tw/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://lamb.tw/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary" />
+
+
+    
+
+
+
+<meta property="og:title" content="reaper音頻設備的選擇以及認識ASIO" />
+<meta property="og:description" content="reaper音頻設備的選擇以及認識ASIO 這次來分享一下關於reaper設定的技巧，……" />
+<meta property="og:url" content="http://lamb.tw/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E9%9F%B3%E9%A0%BB%E8%A8%AD%E5%AE%9A%E8%B7%9Fasio%E4%BB%8B%E7%B4%B9/" />
+<meta property="og:site_name" content="小羔羊分享站" />
+<meta property="og:locale" content="zh-tw" /><meta property="og:image" content="http://lamb.tw/icons/lamb.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-08-21T17:44:55&#43;08:00" />
+    <meta property="article:modified_time" content="2022-04-29T12:02:47&#43;08:00" />
+    
+    <meta property="article:section" content="txt" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">小羔羊分享站</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input aria-label="在這裡輸入搜尋文字(使用簡體中文或英文搜尋效果最佳)" type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">閱讀更多 »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分類文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">同標籤的文章</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/works/works"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的音樂作品線上聽和下載 05/09更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/teaching-the-nuclear-file/teaching-the-nuclear-file"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我的教學mp3線上聽和其他檔案下載</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站介紹和公告</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/article-update/update"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">網站、文章的更新日誌05/16更新</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/website-recommendation/new"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">我推薦的網站</span></a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-align="justify" data-type="txt">
+
+            <h1 class="post-title p-name">reaper音頻設備的選擇以及認識ASIO</h1>
+
+            
+
+            
+
+            
+                
+
+<div class="post-meta">
+    
+    
+        
+        <time datetime="2022-04-29T12:02:47&#43;08:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2022.4.29</time>
+    
+    
+    
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;8&nbsp;分鐘</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <h2 id="reaper音頻設備的選擇以及認識asio">reaper音頻設備的選擇以及認識ASIO</h2>
+<p>這次來分享一下關於reaper設定的技巧，以及ASIO的小知識，這是我自己的經驗，如有錯漏也歡迎指證，某些專業術語可能不是特別正確，但僅供大家建立起概念。<br>
+在reaper剛安裝好時，我們需要先設定音頻設備才能使用，<br>
+但音頻設備的下拉方塊裡那麼多種，我又該如何選呢？哪一種最好？</p>
+<h4 id="主機板內建音效卡">主機板內建音效卡</h4>
+<p>p.s 主機板內建的音效卡，也可稱之為板載卡(On bord sound card).<br>
+根據我的實際測試<br>
+DirectSound<br>
+WaveOut<br>
+這兩種是每台電腦應該都會有的音頻設備，而且能用，如果你沒有專業的卡，你只能選這兩種之一，<br>
+簡單來說，這兩種輸出輸入都是透過主機板內建的音效卡，品質都很一般，輸出輸入延遲都很大，約為500到750毫秒，<br>
+延遲是什麼意思呢？就是你對著麥克風叫一聲並輸入到電腦，經過轉換透過音效卡送出去到你從喇叭或耳機聽到聲音中間的時間，<br>
+上面有說到，最高可能到750毫秒，也就是過了快一秒，我們才能從喇叭或耳機聽到自己對麥克風發出的聲音，<br>
+如果你又喜歡唱卡拉ok的感覺，就是希望喇叭或耳機也能聽到自己的聲音，這就叫做監聽，透過上面那兩種音頻設備來唱的話，只會有一種結果，<br>
+你會發現你的聲音永遠對不到伴奏上，你只能在錄音結束後，手動去調整人聲軌出來的時間，使其與伴奏音樂吻合。</p>
+<hr>
+<p>根據以前查過的資料，因為輸出輸入都要通過系統的混音台來傳輸資料，所以延遲會比較大，<br>
+由於內建音效卡的轉換晶片訊號相對較差，經過混音器進行統一的重新採樣過程後會造成一定量的訊號損失，所以音質也會不如ASIO的卡，<br>
+如果你有研究過，你會發現不管播放16或24bit，44100或48000或其他採樣率的音樂檔，播放器都能夠有聲，這就是因為所有的聲音都會經過系統的重新採樣，<br>
+而重新採樣的標準就取決於，控制台內聲音裡的播放裝置裡面設定的採樣率，關於採樣率的設定，後面會進行說明，<br>
+如果你使用的是支援ASIO的卡，且播放器也是走ASIO的線路，那只能播放卡支援的採樣率，否則會無聲，<br>
+根據網路上流傳，用ASIO的線路聽音樂音質較好，不過我個人的經驗還是覺得這要看卡本身好不好，一張爛卡就算有ASIO，那聲音可能連主板內建的音效卡都不如。</p>
+<hr>
+<h4 id="asio">ASIO</h4>
+<p>另外就是在下拉列表也有的ASIO了，這也是專業人士在錄音時會選擇的音頻設備，<br>
+要能支援ASIO這種技術，通常都要用外接的音效卡，比較專業一點的可能會稱之為錄音介面，<br>
+如果你已經有了一張這種卡，你可以選擇ASIO看看，如果你的卡不支援，你按了確定他是無法保存設定的，應該會彈出錯誤訊息。</p>
+<h4 id="asio設定">ASIO設定</h4>
+<p>通常ASIO的卡在預設狀態下，他的延遲時間不會拉到最低，所以如果你選了ASIO，你發現還是有延遲，你可能需要按照教學文裡面的文章來設定一下，<br>
+如果你在錄音時發現其他聲音都消失了，可能是軟體獨佔了你的音效卡或錄音介面，<br>
+如果要關閉獨佔音效卡的功能，請按照下面的步驟</p>
+<ol>
+<li>在桌面或用其他方法打開控制台</li>
+<li>在顯示模式為類別的狀態下找到<br>
+硬體和音效 連結<br>
+按enter進去</li>
+<li>tab找<br>
+聲音 連結<br>
+按enter打開</li>
+<li>tab找<br>
+播放 內容頁 選取下面的播放裝置以修改其設定: 清單</li>
+<li>按上或下找到你要設定的裝置名稱，通常名稱就是卡的牌子加型號，例如我的就是<br>
+喇叭; Roland Rubix 44; 預設裝置</li>
+<li>找到裝置後按alt+p打開內容，<br>
+或是按tab找內容按空格，都可以</li>
+<li>tab或shift+tab找到一般 索引標籤，往又找<br>
+進階 索引標籤</li>
+<li>tab找<br>
+獨佔模式 群組 允許應用程式獨佔這個裝置 核取方塊<br>
+在這按空格取消勾選</li>
+<li>按tab找確定enter完成設定，<br>
+之後會返回聲音的視窗，可以按ESC關閉或找確定enter皆可，不會影響</li>
+</ol>
+<h4 id="asio-是什麼">ASIO 是什麼</h4>
+<p>簡單來說ASIO是一種針對錄音工程或需要低延遲聲音通訊環境所設計的，是聲音在軟體與硬體間的通訊規則，支援與否取決於卡內部的處理晶片，<br>
+而通常標榜隨插即用，完全不需要裝驅動，甚至是根本沒提供專用驅動的那種卡九成九是不支援ASIO，<br>
+要使用ASIO除了卡本身有支援，也要安裝卡的驅動，現在驅動大部分都要從卡的官方網站下載，通常不會附安裝光碟，<br>
+如果你沒裝驅動，那怕卡有支援也無法使用，這點要注意<br>
+至於mac也就是蘋果電腦，通常是不用自己安裝驅動也能用，這就另當別論了，<br>
+mac的技術細節有興趣的也可以自己Google一下。</p>
+<h4 id="asio卡的選擇">ASIO卡的選擇</h4>
+<p>支援ASIO的音效卡、錄音介面百百種，但挑選時就要特別注意，以下是我的建議提供參考</p>
+<ol>
+<li>真的能支援ASIO，不要買到免驅動的卡，<br>
+網上流傳有偽造的ASIO，這種通常能用但效果很爛，通常不要買沒聽過的牌子或太便宜的就能跳過此坑</li>
+<li>ASIO面板或驅動的控制面板我們可以用螢幕閱讀器操作，<br>
+也就是你有試用過，或朋友用過確定可以操作的那種卡</li>
+<li>支援48伏幻象電源，<br>
+有了這個功能，才能接電容式麥克風<br>
+p.s 市面上能看到的電容式麥克風有三種供電方式，吃電池或吃幻象電源的電又或是吃獨立變壓器所提供的 130v幻象電源。不用電池也不用供電的通常是動圈麥。</li>
+<li>驅動軟體我們可以自己安裝，不用靠別人</li>
+<li>內錄或其他功能最好是硬體控制的，<br>
+大部分錄音介面都能內錄，也就是可以一邊錄電腦的聲音一邊錄麥克風，或是有壓縮器、監聽的功能，<br>
+有些卡控制這些功能採用軟體控制，這有很大機率我們無法順利操作，或只能操作部分的功能，<br>
+以防萬一直接挑從硬體控制的最簡單，想要什麼功能直接從卡本體上操作即可</li>
+<li>不要買克索斯的卡，驅動難操作、音質不佳</li>
+<li>不要買艾肯的卡，驅動一樣難操作、音質普通<br>
+p.s 艾肯在對岸賣得還不錯，但很多盲朋友都是找某某高手幫忙調，或是用某某康自製的驅動以及他提供的調整服務，這十分的不可靠，而且調一次好幾百人民幣，還綁主機板，換電腦就不能用了<br>
+像我換電腦要重新裝驅動、調卡，卻怎麼也找不到當初幫我調的人，艾肯的卡一張6000元台幣，等同報廢。</li>
+</ol>
+<hr>
+<h4 id="使用經驗">使用經驗</h4>
+<p>根據實際使用上的經驗，不是所有支援ASIO的卡都能達到優秀的錄音效果，<br>
+如上所述ASIO只是一種針對錄音工程聲音之間的低延遲通訊規則，讓我們在演奏midi鍵盤或唱歌時能夠像真的在演奏樂器或像在唱卡拉ok一樣，唱歌或樂器的聲音立馬從喇叭或耳機出來，<br>
+聲音好壞的關鍵還是取決於卡的輸入及輸出電路設計，以及數位類比轉換晶片的好壞，<br>
+輸入端子就包括了讓我們插麥克風或其他樂器的卡農端子[Cannon]，現在普遍都是卡農加6.3接口的複合式插槽，<br>
+簡單來說卡農投長的就像一個圓形的插座，而圓形裡面是三個凹洞，三個凹洞裡面如果還有一個較大的圓孔就是6.3的插槽，<br>
+輸出端子則是讓我們接耳機或額外輸出到音箱的插槽，通常比較高階一些的卡我看過的都是6.3的插槽，不過不用擔心，通常買到這種卡都會附贈6.3轉3.5，這樣我們就能透過一條兩頭皆為3.5工的訊號線來連接電腦跟卡，<br>
+當然也有卡沒有附贈6.3轉3.5轉接頭，那只能自己網購一下，好一點的500元就不錯了，<br>
+而這種插槽不論輸出輸入都是有分很多等級的，從幾十塊的到好幾千塊地都有，<br>
+這就要看製造者的良心了，因為這種插槽會很大程度影響我們輸出或輸入的類比訊號，我們也很難知道廠商用的是什麼等級的零組件，通常都要試了才知道，<br>
+另外我自己感覺標榜錄音介面的大多都是輸入訊號的端子做的比較好，輸出，也就是拿來聽音樂的端子比較普通，<br>
+在來會影響聲音的還有類比轉數字跟數字轉類比的晶片，<br>
+有的人稱數位類比轉換器，有的稱數字模擬轉換器，都是一樣的東西，翻譯問題，<br>
+像是高階的音響玩家都會玩的USB DAC，就是典型的數位類比轉換器，我們電腦或手機上的3.5插槽也是類似的結構，只不過USB DAC的用料更高端，<br>
+簡單來說它是將數位訊號轉成我們可以聽到聲音的類比訊號的一種晶片。<br>
+<a href="https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E9%A1%9E%E6%AF%94%E8%BD%89%E6%8F%9B%E5%99%A8" target="_blank" rel="noopener">點我參考數位類比轉換器的維基百科</a></p>
+<hr>
+<p>類比轉數位則是錄音介面比較會注意到的，因為我們是要從外面輸入吉他或鋼琴或麥克風的訊號進去，就需要透過這個轉換的過程，<br>
+同樣也要一個轉換器將類比訊號轉成數位訊號，有興趣可以去Google一下，就不放連結了，<br>
+最後則是抗干擾，因為我們輸入模擬訊號時，那個模擬訊號是很小的，需要經過增益，也就是將訊號放大的過程，<br>
+如果卡裡面的組件容易被干擾，例如周遭的電磁干擾或是卡本身的電流干擾，就會讓我們聽到的聲音不夠乾淨，甚至有奇怪的嗶嗶聲或是底噪特別大，<br>
+到最後的結果就是錄出來的作品有雜訊，聲音不夠乾淨，聽起來亂糟糟的。<br>
+像我以前用的艾肯q4 nano vst，就存在這個問題，有時候錄音會發現背景有忽大忽小的雜訊。<br>
+總之這種東西就是一分錢一分貨，便宜沒好貨，貴也不見得好，<br>
+所以建議大家在挑選適合的卡之前，不要貪功能多，這是成本的問題，<br>
+功能多了價格又便宜你覺得每個零組件的成本會高嗎<br>
+像我自己目前用的就是<br>
+roland rubix44<br>
+從今年2月用到現在還是覺得很不錯，錄音聲音乾淨，聽音樂也不賴!<br>
+最後，如果你還想進一步認識錄音介面的重要性，強烈建議閱讀這一篇匹克幫大神的說明，對於挑選適合自己的設備十分有幫助，講解的也更清楚專業喔<br>
+<a href="https://a85115230.pixnet.net/blog/post/399683908" target="_blank" rel="noopener">點我打開聲音工程的心臟-Audio Interface</a></p>
+<p>以上，感謝閱讀。</p>
+
+            </div>
+
+            
+
+
+        </article>
+
+        
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+                <li class="post-nav-prev">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80-8-%E5%B8%B8%E7%94%A8%E5%BF%AB%E9%80%9F%E9%8D%B5%E7%B8%BD%E6%95%B4%E7%90%86/" rel="prev">&lt; reaper快速入門-8 常用快速鍵總整理</a>
+                </li>
+            
+            
+                <li class="post-nav-next">
+                    <a href="/txt/reaper%E5%BF%AB%E9%80%9F%E5%85%A5%E9%96%80/%E8%81%B2%E9%9F%B3%E8%99%95%E7%90%86%E8%BB%9F%E9%AB%94%E6%9C%83%E7%94%A8%E5%88%B0%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AD%98/" rel="next">聲音工程會用到的小知識 &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;2021–2022&nbsp;小羔羊</div><div class="site-copyright">文章內容為小羔羊原創，轉載請包含原網址，勿擅自抄襲，違者必糾</div><div class="custom-footer"><hr>
+<h2 id="頁尾">頁尾</h2>
+</div>
+                <div class="busuanzi-site-uv-and-pv">
+                    <span id="busuanzi_container_site_uv">本站訪客數&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon busuanzi-site-uv"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>&nbsp;<span id="busuanzi_value_site_uv"></span></span>&nbsp;|&nbsp;<span id="busuanzi_container_site_pv">本站訪問量&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon busuanzi-site-pv"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                </div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="訂閱RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:c469591@mail.batol.net" target="_blank" rel="external noopener" title="聯繫我的Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://open.lbry.com/@%E5%B0%8F%E7%BE%94%E7%BE%8A%E6%95%99%E5%AD%B8%E5%88%86%E4%BA%AB%E7%AB%99:f" target="_blank" rel="external noopener" title="前往我在LBRY的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="https://www.youtube.com/channel/UCXYRCcH_gTckelyOGd3dlDg" target="_blank" rel="external noopener" title="前往我在youtube的小羔羊分享站頻道"></a>
+                </li><li class="socials-item">
+                    <a href="/friendweb/web" target="_blank" rel="external noopener" title="友站連結"></a>
+                </li><li class="socials-item">
+                    <a href="https://lamb.tw/" target="_blank" rel="external noopener" title="前往主要站點(更快)"></a>
+                </li><li class="socials-item">
+                    <a href="https://lambtw.com" target="_blank" rel="external noopener" title="前往備用站點"></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+
+
+    </body>
+</html>
